@@ -7,14 +7,28 @@ The public legal pages for **Hera**, an unincorporated, student-led peer-support
 
 ## Pages
 
-| Route | Document |
+This repository is named `legal` and owned by the `heraformothers` organisation, so GitHub Pages
+publishes it at **`https://heraformothers.github.io/legal/`**. That base path *is* the `/legal/`
+route, which is why the repository root holds the index rather than a `legal/` folder.
+
+| Published URL | Page |
 |---|---|
 | `/legal/` | Index of all documents |
-| `/privacy/` | Privacy Notice |
-| `/terms/` | Terms of Use |
-| `/community-guidelines/` | Community Guidelines |
-| `/mentor-agreement/` | Mentor Confidentiality, Boundaries and Conduct Agreement |
-| `/support/` | Contact details and crisis resources |
+| `/legal/privacy/` | Privacy Notice |
+| `/legal/terms/` | Terms of Use |
+| `/legal/community-guidelines/` | Community Guidelines |
+| `/legal/mentor-agreement/` | Mentor Agreement |
+| `/legal/support/` | Contact details and crisis resources |
+| `/legal/peer-support/` | Peer Support & Mentorship Safety — **status page, notice not yet written** |
+
+Two compatibility routes exist so that links already stored in the app never 404:
+
+| Published URL | Forwards to | Why |
+|---|---|---|
+| `/legal/mentor-code/` | `/legal/mentor-agreement/` | `legal_documents.mentor_code.url` uses the old name |
+| `/legal/legal/` | `/legal/` | Guards against a doubled path |
+
+Keep both. Deleting a forwarding page breaks a link a mother may tap from inside the app.
 
 ## These URLs are permanent
 

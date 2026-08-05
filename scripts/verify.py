@@ -16,7 +16,11 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ROUTES = ["legal", "privacy", "terms", "community-guidelines", "mentor-agreement", "support"]
+ROUTES = ["privacy", "terms", "community-guidelines", "mentor-agreement", "support", "peer-support"]
+# Forwarding pages: no draft banner, no h1 rules — they only need to resolve.
+FORWARDING = ["legal", "mentor-code"]
+# Every URL the app has stored in legal_documents, relative to the Pages base.
+APP_URLS = ["privacy", "terms", "community-guidelines", "mentor-code", "peer-support"]
 
 failures: list[str] = []
 notes: list[str] = []
@@ -40,8 +44,14 @@ for route in ROUTES:
     check(path.is_file(), f"/{route}/ exists")
     if path.is_file():
         pages[route] = path.read_text(encoding="utf-8")
-check((ROOT / "index.html").is_file(), "/ exists")
+check((ROOT / "index.html").is_file(), "/ exists (this is the /legal/ index)")
 pages["(root)"] = (ROOT / "index.html").read_text(encoding="utf-8")
+
+print("\nApp-configured URLs resolve (no 404 for a link a mother taps)")
+for route in APP_URLS:
+    check((ROOT / route / "index.html").is_file(), f"legal_documents URL /{route} resolves")
+for route in FORWARDING:
+    check((ROOT / route / "index.html").is_file(), f"forwarding page /{route}/ exists")
 check((ROOT / ".nojekyll").is_file(), ".nojekyll present (Pages serves files as-is)")
 
 # ------------------------------------------------------- 2. required markup
@@ -74,14 +84,25 @@ for name, source in pages.items():
     label = f"/{name}/" if name != "(root)" else "/"
     base = ROOT if name == "(root)" else ROOT / name
     for href in re.findall(r'href="([^"]+)"', source):
-        if href.startswith(("mailto:", "http://", "https://", "#")):
+        if href.startswith(("mailto:", "http://", "https://")):
             continue
-        target = (base / href).resolve()
-        if target.is_dir():
-            target = target / "index.html"
-        elif href.endswith("/"):
-            target = target / "index.html"
-        check(target.exists(), f"{label} link {href} resolves")
+        path_part, _, fragment = href.partition("#")
+
+        if path_part:
+            target = (base / path_part).resolve()
+            if target.is_dir() or path_part.endswith("/"):
+                target = target / "index.html"
+            check(target.exists(), f"{label} link {href} resolves")
+        else:
+            target = base / "index.html"  # same-page fragment
+
+        # A fragment that points at a heading that does not exist is a broken
+        # link too, just a quieter one.
+        if fragment and target.exists():
+            check(
+                f'id="{fragment}"' in target.read_text(encoding="utf-8"),
+                f"{label} anchor #{fragment} exists in {path_part or 'this page'}",
+            )
 
 # ------------------------------- 5. no external requests, no tracking, no JS
 print("\nNo third-party requests or tracking")

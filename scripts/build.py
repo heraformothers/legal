@@ -205,8 +205,10 @@ def inject_doc_meta(body: str, title: str, version: str) -> str:
     return body[:position] + "\n" + DOC_META.format(title=html.escape(title), version=version) + body[position:]
 
 
-def page(title: str, body: str, *, back: bool = True, description: str = "") -> str:
-    backlink = '<p class="backlink"><a href="../legal/">&larr; All Hera legal documents</a></p>' if back else ""
+def page(title: str, body: str, *, back: bool = True, description: str = "", depth: int = 1) -> str:
+    """depth 0 = repository root (which is the Pages base), 1 = a sub-route."""
+    up = "../" * depth if depth else "./"
+    backlink = f'<p class="backlink"><a href="{up}">&larr; All Hera legal documents</a></p>' if back else ""
     return f"""<!DOCTYPE html>
 <html lang="en-SG">
 <head>
@@ -216,7 +218,7 @@ def page(title: str, body: str, *, back: bool = True, description: str = "") -> 
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="{html.escape(description or title, quote=True)}">
 <title>{html.escape(title)} &middot; Hera</title>
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="{up}assets/style.css">
 </head>
 <body>
 {DRAFT_BANNER}
@@ -227,7 +229,7 @@ def page(title: str, body: str, *, back: bool = True, description: str = "") -> 
 <p>Hera is an unincorporated, student-led project in Singapore providing non-clinical peer support.
 It is not a medical or emergency service.</p>
 <p>Questions, requests or complaints: <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></p>
-<p><a href="../legal/">All legal documents</a> &middot; <a href="../support/">Support</a></p>
+<p><a href="{up}">All legal documents</a> &middot; <a href="{up}support/">Support</a></p>
 </footer>
 </main>
 </body>
@@ -242,6 +244,28 @@ def write(route: str, contents: str) -> None:
     print(f"  /{route}/")
 
 
+FORWARD = """<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="refresh" content="0; url={target}">
+<link rel="canonical" href="{target}">
+<title>{title} &middot; Hera</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="wrap">
+<h1>{title}</h1>
+<p>This page has moved. If you are not redirected automatically,
+<a href="{target}">continue to {label}</a>.</p>
+</main>
+</body>
+</html>
+"""
+
+
 def main() -> None:
     print("Building Hera legal pages...")
 
@@ -253,9 +277,12 @@ def main() -> None:
         body = inject_doc_meta(body, title, version)
         write(route, page(title, body, description=_blurb))
 
-    # ------------------------------------------------------------- /legal/
+    # ------------------------------------------------------------ index at /
+    # The repository is published at .../legal/, so the REPOSITORY ROOT is the
+    # /legal/ route. Putting the index here keeps the app's configured URLs
+    # (.../legal/privacy, .../legal/terms) working untouched.
     items = "".join(
-        f'<li><a href="../{route}/">{title}</a><p>{blurb}</p></li>'
+        f'<li><a href="./{route}/">{title}</a><p>{blurb}</p></li>'
         for route, (_f, title, blurb) in PAGES.items()
     )
     legal_body = f"""<h1>Hera &mdash; legal documents</h1>
@@ -269,8 +296,11 @@ before creating an account, and without signing in.</p>
 <ul class="doclist">{items}</ul>
 <h2 id="contact">Contact</h2>
 <p>Questions, requests or complaints: <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>.
-We aim to reply within 14 days. See also <a href="../support/">Support</a>.</p>"""
-    write("legal", page("Legal", legal_body, back=False, description="Hera's Terms of Use, Privacy Notice, Community Guidelines and Mentor Agreement."))
+We aim to reply within 14 days. See also <a href="./support/">Support</a>.</p>"""
+    root_html = page("Legal", legal_body, back=False, depth=0,
+                     description="Hera's Terms of Use, Privacy Notice, Community Guidelines and Mentor Agreement.")
+    (ROOT / "index.html").write_text(root_html, encoding="utf-8")
+    print("  /  (legal index)")
 
     # ----------------------------------------------------------- /support/
     support_body = f"""<h1>Support</h1>
@@ -307,24 +337,42 @@ the services they provide, and these numbers may change.</p>
 <li><strong>National Anti-Violence &amp; Sexual Harassment Helpline</strong> &mdash; 1800-777-0000</li>
 </ul>
 <h2 id="legal">Legal documents</h2>
-<p>See <a href="../legal/">all Hera legal documents</a>.</p>"""
-    write("support", page("Support", support_body, description="How to contact Hera, and crisis resources in Singapore."))
+<p>See <a href="../">all Hera legal documents</a>.</p>"""
+    write("support", page("Support", support_body,
+                          description="How to contact Hera, and crisis resources in Singapore."))
 
-    # ------------------------------------------------------- / (forwarding)
-    root_body = """<h1>Hera</h1>
-<p>This site hosts Hera's legal documents and support information.</p>
-<ul class="doclist">
-<li><a href="./legal/">Legal documents</a><p>Terms of Use, Privacy Notice, Community Guidelines and Mentor Agreement.</p></li>
-<li><a href="./support/">Support</a><p>How to reach us, and crisis resources.</p></li>
-</ul>"""
-    root_html = page("Hera", root_body, back=False, description="Hera legal documents and support.")
-    # The root page is one level up from every other page, so fix its relative
-    # links: ../assets -> ./assets, ../legal -> ./legal.
-    root_html = root_html.replace('href="../assets/', 'href="./assets/')
-    root_html = root_html.replace('href="../legal/', 'href="./legal/')
-    root_html = root_html.replace('href="../support/', 'href="./support/')
-    (ROOT / "index.html").write_text(root_html, encoding="utf-8")
-    print("  /")
+    # ------------------------------------------------- compatibility routes
+    # The app links to /legal/mentor-code and /legal/legal. Neither is the
+    # canonical route, but a link a mother taps must never 404 (section 6).
+    write("mentor-code", FORWARD.format(target="../mentor-agreement/",
+                                        title="Mentor Code &amp; Boundaries",
+                                        label="the Mentor Agreement"))
+    write("legal", FORWARD.format(target="../", title="Legal documents",
+                                  label="the legal index"))
+
+    # ------------------------------------------------------- /peer-support/
+    # The app registers a Peer Support notice and links here. No approved
+    # Phase 2 document exists for it, so this is an honest status page: it
+    # invents no legal wording and points at the documents that do cover the
+    # same ground.
+    peer_body = """<h1>Peer Support &amp; Mentorship Safety</h1>
+<div class="reviewnote"><p><strong>This notice is not published yet.</strong> It is acknowledged in
+the app before a first mentor request, but the standalone page has not been written or approved.
+Until it is, the points it covers are set out in the documents below.</p></div>
+<p>What you should know about peer support at Hera:</p>
+<ul>
+<li>Mentors are volunteers sharing lived experience &mdash; not healthcare professionals acting in
+that capacity.</li>
+<li>They cannot diagnose, treat, or give medical advice, and they are not trained to respond to a
+crisis.</li>
+<li>Hera is not an emergency service. In an emergency, contact emergency services first.</li>
+<li>Share only what you are comfortable sharing.</li>
+<li>If anything feels wrong, report it to Hera from the Mentor tab.</li>
+</ul>
+<p>These points are stated in full in <a href="../terms/#mentorship">Terms of Use, section 8</a> and
+in the <a href="../mentor-agreement/">Mentor Agreement</a>.</p>"""
+    write("peer-support", page("Peer Support & Mentorship Safety", peer_body,
+                               description="What peer support at Hera is, and is not."))
 
     # GitHub Pages: serve the files exactly as generated, no Jekyll processing.
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
