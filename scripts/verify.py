@@ -58,9 +58,12 @@ check((ROOT / ".nojekyll").is_file(), ".nojekyll present (Pages serves files as-
 print("\nPer-page requirements")
 for name, source in pages.items():
     label = f"/{name}/" if name != "(root)" else "/"
-    ok = 'class="draft-banner"' in source and "DRAFT FOR REVIEW" in source
-    check(ok, f"{label} shows the draft banner")
-    check('name="robots" content="noindex, nofollow"' in source, f"{label} is noindex")
+    ok = 'class="draft-banner"' not in source and "DRAFT FOR REVIEW" not in source
+    check(ok, f"{label} carries no draft banner")
+    # /support/ is a contact page, not a versioned legal document, so it
+    # carries no status block.
+    if name != "support":
+        check("In force" in source, f"{label} is marked in force")
     check("<title>" in source and "</title>" in source, f"{label} has a title")
     check(source.count("<h1") == 1, f"{label} has exactly one h1")
     check('lang="en-SG"' in source, f"{label} declares a language")
@@ -123,24 +126,17 @@ check("@import" not in css, "stylesheet imports nothing external")
 check("url(http" not in css, "stylesheet fetches no remote asset")
 
 # --------------------------------------------- 6. placeholders are visible
-print("\nUnresolved placeholders are shown, not hidden")
+print("\nNo unresolved placeholders")
 placeholder_pattern = re.compile(r"\[([A-Z][^\]<>]*)\]")
 found: dict[str, set[str]] = {}
 for name, source in pages.items():
     for match in placeholder_pattern.finditer(source):
         found.setdefault(match.group(1), set()).add(name)
 
-check(bool(found), "placeholders are present in the rendered output")
+check(not found, f"no unresolved placeholders remain {sorted(found) if found else ''}")
 for name, source in pages.items():
     label = f"/{name}/" if name != "(root)" else "/"
-    raw = placeholder_pattern.findall(source)
-    marked = placeholder_pattern.findall(
-        "".join(re.findall(r'<span class="placeholder">([^<]*)</span>', source))
-    )
-    check(
-        len(raw) == len(marked),
-        f"{label} every placeholder is marked up ({len(marked)}/{len(raw)})",
-    )
+    check(not placeholder_pattern.findall(source), f"{label} has no placeholder")
     check("display:none" not in source.replace(" ", ""), f"{label} hides nothing with display:none")
 
 # ---------------------------------------------- 7. source and output match
@@ -175,7 +171,3 @@ if failures:
     sys.exit(1)
 
 print("All checks passed.")
-print(f"\nDistinct unresolved placeholders ({len(found)}):")
-for text in sorted(found):
-    where = ", ".join(sorted(found[text]))
-    print(f"  [{text}]  ->  {where}")

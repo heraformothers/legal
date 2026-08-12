@@ -30,13 +30,12 @@ PAGES = {
     "mentor-agreement": ("MENTOR_AGREEMENT.md", "Mentor Agreement", "Confidentiality, boundaries and conduct for volunteer peer mentors."),
 }
 
-DRAFT_BANNER = """<div class="draft-banner" role="note">
-  DRAFT FOR REVIEW &mdash; NOT YET EFFECTIVE
-  <p>This document is published for review only. It is not in force, some details are still
-  unresolved, and it must not be relied on.</p>
-</div>"""
-
 SUPPORT_EMAIL = "heraformothers@gmail.com"
+
+# These documents are in force. Every placeholder is resolved; the effective
+# date below is the date the resolved set was published.
+EFFECTIVE_DATE = "13 August 2026"
+DOCUMENT_SET_VERSION = "2026-08-05.1"
 
 
 # --------------------------------------------------------------- inline pass
@@ -190,8 +189,8 @@ def render(markdown: str) -> tuple[str, str]:
 DOC_META = """<div class="docmeta"><dl>
 <dt>Document</dt><dd>{title}</dd>
 <dt>Version</dt><dd>{version}</dd>
-<dt>Status</dt><dd>Draft for review &mdash; not yet effective</dd>
-<dt>Effective date</dt><dd>Pending</dd>
+<dt>Status</dt><dd>In force</dd>
+<dt>Effective date</dt><dd>{effective}</dd>
 </dl></div>"""
 
 
@@ -200,9 +199,9 @@ def inject_doc_meta(body: str, title: str, version: str) -> str:
     marker = "</h1>"
     position = body.find(marker)
     if position == -1:
-        return DOC_META.format(title=html.escape(title), version=version) + body
+        return DOC_META.format(title=html.escape(title), version=version, effective=EFFECTIVE_DATE) + body
     position += len(marker)
-    return body[:position] + "\n" + DOC_META.format(title=html.escape(title), version=version) + body[position:]
+    return body[:position] + "\n" + DOC_META.format(title=html.escape(title), version=version, effective=EFFECTIVE_DATE) + body[position:]
 
 
 def page(title: str, body: str, *, back: bool = True, description: str = "", depth: int = 1) -> str:
@@ -214,14 +213,11 @@ def page(title: str, body: str, *, back: bool = True, description: str = "", dep
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Temporary while these pages are a draft for review. Remove when they go live. -->
-<meta name="robots" content="noindex, nofollow">
 <meta name="description" content="{html.escape(description or title, quote=True)}">
 <title>{html.escape(title)} &middot; Hera</title>
 <link rel="stylesheet" href="{up}assets/style.css">
 </head>
 <body>
-{DRAFT_BANNER}
 <main class="wrap">
 {backlink}
 {body}
@@ -287,9 +283,9 @@ def main() -> None:
     )
     legal_body = f"""<h1>Hera &mdash; legal documents</h1>
 <div class="docmeta"><dl>
-<dt>Document set</dt><dd>2026-08-05.1</dd>
-<dt>Status</dt><dd>Draft for review &mdash; not yet effective</dd>
-<dt>Effective date</dt><dd>Pending</dd>
+<dt>Document set</dt><dd>{DOCUMENT_SET_VERSION}</dd>
+<dt>Status</dt><dd>In force</dd>
+<dt>Effective date</dt><dd>{EFFECTIVE_DATE}</dd>
 </dl></div>
 <p>These are the documents that govern using Hera. They are published here so they can be read
 before creating an account, and without signing in.</p>
@@ -319,13 +315,13 @@ one at Hera is monitoring the app for people in danger.</p>
 <tr><td data-label="What you need">General support or an account problem</td>
     <td data-label="Who to contact"><a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></td></tr>
 <tr><td data-label="What you need">Privacy, access or correction request</td>
-    <td data-label="Who to contact"><span class="placeholder">[NAME OR &quot;Hera Data Protection Lead&quot;]</span>,
+    <td data-label="Who to contact">Hera Data Protection Lead,
     at <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></td></tr>
 <tr><td data-label="What you need">Moderation or safety concern</td>
-    <td data-label="Who to contact"><span class="placeholder">[FULL NAME OR ROLE &mdash; moderation and safety lead]</span>,
+    <td data-label="Who to contact">Hera Moderation &amp; Safety Lead,
     at <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></td></tr>
 <tr><td data-label="What you need">Who is responsible for Hera</td>
-    <td data-label="Who to contact"><span class="placeholder">[FULL LEGAL NAME]</span>, Hera Project Team</td></tr>
+    <td data-label="Who to contact">Jessica Chen, Hera Project Team</td></tr>
 </tbody></table></div>
 <h2 id="crisis-resources">Crisis resources in Singapore</h2>
 <p>These are independent organisations. Hera does not control, endorse, or take responsibility for
@@ -351,26 +347,66 @@ the services they provide, and these numbers may change.</p>
                                   label="the legal index"))
 
     # ------------------------------------------------------- /peer-support/
-    # The app registers a Peer Support notice and links here. No approved
-    # Phase 2 document exists for it, so this is an honest status page: it
-    # invents no legal wording and points at the documents that do cover the
-    # same ground.
-    peer_body = """<h1>Peer Support &amp; Mentorship Safety</h1>
-<div class="reviewnote"><p><strong>This notice is not published yet.</strong> It is acknowledged in
-the app before a first mentor request, but the standalone page has not been written or approved.
-Until it is, the points it covers are set out in the documents below.</p></div>
-<p>What you should know about peer support at Hera:</p>
+    # Acknowledged in the app immediately before a mother's first mentor
+    # request. It introduces no new obligation: every point restates Terms of
+    # Use section 8 and the Mentor Agreement, which remain the governing text.
+    peer_body = f"""<h1>Peer Support &amp; Mentorship Safety</h1>
+<div class="docmeta"><dl>
+<dt>Document</dt><dd>Peer Support &amp; Mentorship Safety</dd>
+<dt>Version</dt><dd>{DOCUMENT_SET_VERSION}</dd>
+<dt>Status</dt><dd>In force</dd>
+<dt>Effective date</dt><dd>{EFFECTIVE_DATE}</dd>
+</dl></div>
+<p>You are shown this notice once, just before you send your first mentor request. It sets out what
+peer support at Hera is, and what it is not. It adds nothing to your agreement with Hera: every
+point below restates <a href="../terms/#mentorship">Terms of Use, section 8</a> and the
+<a href="../mentor-agreement/">Mentor Agreement</a>, which are the documents that govern mentorship.</p>
+
+<h2 id="what-a-mentor-is">What a mentor is</h2>
+<p>Hera mentors are volunteer mothers who have been through pregnancy or early motherhood and have
+offered to listen. They are approved by Hera before they are listed, and they accept the Mentor
+Agreement covering confidentiality, boundaries and conduct.</p>
+<p>A mentor shares her own experience. That is the whole of what she offers, and for many mothers it
+is enough.</p>
+
+<h2 id="what-a-mentor-is-not">What a mentor is not</h2>
 <ul>
-<li>Mentors are volunteers sharing lived experience &mdash; not healthcare professionals acting in
-that capacity.</li>
-<li>They cannot diagnose, treat, or give medical advice, and they are not trained to respond to a
-crisis.</li>
-<li>Hera is not an emergency service. In an emergency, contact emergency services first.</li>
-<li>Share only what you are comfortable sharing.</li>
-<li>If anything feels wrong, report it to Hera from the Mentor tab.</li>
+<li>A mentor is <strong>not</strong> a doctor, nurse, midwife, psychologist, counsellor or social
+worker acting in that capacity &mdash; even where she happens to hold such a qualification.</li>
+<li>A mentor <strong>cannot</strong> diagnose a condition, treat one, or advise you on medication,
+feeding, or any other medical decision.</li>
+<li>A mentor is <strong>not</strong> trained to respond to a crisis, and is under no obligation to
+be available at any particular time.</li>
+<li>Nothing a mentor says is medical advice. Where your health or your baby's health is concerned,
+speak to a healthcare professional.</li>
 </ul>
+
+<h2 id="hera-is-not-an-emergency-service">Hera is not an emergency service</h2>
+<div class="reviewnote"><p><strong>No one at Hera is monitoring the app for people in danger.</strong>
+Messages are not read as they are sent, and no alert reaches any person or service because of
+something you write. If you or someone else is in immediate danger, contact emergency services
+directly &mdash; in Singapore, <strong>995</strong> for an ambulance or <strong>999</strong> for the
+police. Further numbers are listed on our <a href="../support/">Support page</a>.</p></div>
+
+<h2 id="what-you-choose-to-share">What you choose to share</h2>
+<p>A mentor sees your first name or display name and what you write to her. Share only what you are
+comfortable sharing, and take the time you want before sharing more. You are never obliged to
+disclose a diagnosis, your address, your workplace, or anything else about your family.</p>
+<p>Mentors agree to keep what you tell them private. That is a promise Hera holds them to, but it is
+a promise made by a volunteer, not a legal duty of confidence owed by a clinician.</p>
+
+<h2 id="if-something-feels-wrong">If something feels wrong</h2>
+<p>Trust that feeling. You can end a mentorship at any time, without giving a reason and without
+telling the mentor why.</p>
+<p>Report a mentor to us from the Mentor tab, or email
+<a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>. Reports reach the Hera Moderation &amp; Safety
+Lead and are handled inside Hera; they are not passed to any third party. We can suspend or remove a
+mentor, and we will tell you what we have done.</p>
+
+<h2 id="more">The full terms</h2>
 <p>These points are stated in full in <a href="../terms/#mentorship">Terms of Use, section 8</a> and
-in the <a href="../mentor-agreement/">Mentor Agreement</a>.</p>"""
+in the <a href="../mentor-agreement/">Mentor Agreement</a>. Where this summary and those documents
+differ, those documents apply.</p>"""
     write("peer-support", page("Peer Support & Mentorship Safety", peer_body,
                                description="What peer support at Hera is, and is not."))
 

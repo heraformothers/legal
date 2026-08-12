@@ -1,6 +1,6 @@
 # Hera — Community Guidelines
 
-**Version 2026-08-05.1 · Effective [EFFECTIVE DATE]**
+**Version 2026-08-05.1 · Effective 13 August 2026**
 
 These guidelines apply to the Circle. You accept them before your first post or comment. They expand on section 5 of the Terms of Use; where the two differ, the Terms apply.
 
@@ -70,4 +70,4 @@ Some posts are also checked automatically before they appear. Those checks are s
 
 ## Contact
 
-**heraformothers@gmail.com** — moderation and safety lead, **[FULL NAME OR ROLE]**.
+**heraformothers@gmail.com** — moderation and safety lead, **Hera Moderation & Safety Lead**.

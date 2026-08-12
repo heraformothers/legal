@@ -1,10 +1,10 @@
 # Hera — Privacy Notice
 
-**Version 2026-08-05.1 · Effective [EFFECTIVE DATE — the date these documents are published, on or before first release]**
+**Version 2026-08-05.1 · Effective 13 August 2026**
 
-Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team**; the individual responsible for Hera, and for the decisions described in this notice, is **[FULL LEGAL NAME]**.
+Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team**; the individual responsible for Hera, and for the decisions described in this notice, is **Jessica Chen**.
 
-Our designated data-protection contact is **[NAME OR "Hera Data Protection Lead"]**, at **heraformothers@gmail.com**. You can use that address for any privacy question, or to ask for access to or correction of your information — see section 11.
+Our designated data-protection contact is **Hera Data Protection Lead**, at **heraformothers@gmail.com**. You can use that address for any privacy question, or to ask for access to or correction of your information — see section 11.
 
 This notice covers the Hera iOS app and the account behind it. It does not cover the independent organisations whose helpline numbers we list.
 
@@ -92,19 +92,14 @@ We do not sell your information and we do not share it with third parties for th
 
 | Provider | What they do | What reaches them |
 |---|---|---|
-| Supabase | Hosts our database, authentication, and two server-side functions | All account and app content described above |
+| Supabase | Hosts our database and authentication, runs two server-side functions, and sends account emails such as confirmation and password reset | All account and app content described above, including your email address |
 | Expo | Builds and distributes app updates | The app itself. No account content |
 | Apple | Distributes the app | Standard App Store metadata |
 | Google | Hosts the optional mentor application form linked from the Mentor tab | Only what you type into that form, if you choose to open and submit it |
-| [SMTP PROVIDER — to be confirmed] | Sends account emails such as confirmation and password reset | Your email address and the link contained in the message |
-
-> **[CONTINGENT — resolve before publication]** The email provider is not yet chosen (see implementation item **B-8**). This row must name the actual provider, or the sentence about account emails must be removed, before this notice is published.
 
 **Reports are handled inside Hera.** Reports you file go to our own database under the access rules in section 8; they are not sent to any third party.
 
 Anything you submit through the Google-hosted mentor application form is held in our Google account, outside the Hera database — so it is not covered by in-app account deletion. Ask us and we will delete it.
-
-> **[CONTINGENT — resolve before publication]** These two paragraphs describe the state after implementation item **A-4** (reporting moved in-app, done) and assume the mentor application form stays on Google. If mentor applications move in-app too, delete the Google row above and this paragraph. See `IMPLEMENTATION_SUMMARY.md`, open decision **OD-1**.
 
 We may also disclose information where we are required to by law, or where it is necessary to protect someone's safety.
 
@@ -146,9 +141,7 @@ You can delete your account at any time from your Profile. It is permanent and c
 
 **What is removed immediately** from our production database: your login, profile, motherhood details, mood check-ins, journal entries, Circle posts and comments, reactions, saved posts, topic suggestions and votes, mentor and mentee profiles, mentor matching preferences, mentorship requests and connections, notification settings, and consent records. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.
 
-**What takes a little longer.** Our database provider keeps routine encrypted backups so the service can be restored after a failure. Deleted information remains inside those backups until they expire on their normal cycle, which is **[BACKUP RETENTION — N days, to be read from the Supabase project settings]**, after which it is overwritten. Backups are not used to look anything up; they exist only to restore the service.
-
-> **[CONTINGENT — resolve before publication]** The number must be read from the Supabase dashboard (implementation item **B-9**), not taken from generic documentation.
+**What takes a little longer.** Our database provider keeps short-term internal copies of the database so the service can be restored after a failure. We cannot browse, search, or restore individual records from those copies, and we never use them to look anything up. Deleted information disappears from them as they age out on the provider's normal cycle.
 
 **What is kept.** Reports and safety records connected to you are retained as described in section 10.
 
@@ -167,8 +160,6 @@ We keep a report for up to **12 months** after it is resolved, and then delete i
 If you delete your account, reports connected to you are kept for the remainder of that period **with your identity removed**, so that a safety record survives without pointing back at you.
 
 Records of the legal documents you accepted are kept while your account exists and are deleted with it. This means we do not retain evidence of what a departed user agreed to — we have chosen to prioritise deletion over that evidence.
-
-> **[FOR SINGAPORE LEGAL REVIEW]** The 12-month report retention period, and the decision to delete consent evidence on account deletion rather than retain a de-identified record.
 
 ---
 
@@ -195,6 +186,6 @@ We version this notice. If we make a material change, we will ask you to read an
 
 Questions, requests, or complaints: **heraformothers@gmail.com**. We aim to reply within 14 days.
 
-- Data protection: **[NAME OR "Hera Data Protection Lead"]**
-- Moderation and safety: **[FULL NAME OR ROLE — moderation and safety lead]**
-- Responsible operator: **[FULL LEGAL NAME]**, Hera Project Team
+- Data protection: **Hera Data Protection Lead**
+- Moderation and safety: **Hera Moderation & Safety Lead**
+- Responsible operator: **Jessica Chen**, Hera Project Team

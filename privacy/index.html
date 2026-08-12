@@ -3,30 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Temporary while these pages are a draft for review. Remove when they go live. -->
-<meta name="robots" content="noindex, nofollow">
 <meta name="description" content="What Hera collects, why, who can reach it, and how to have it deleted.">
 <title>Privacy Notice &middot; Hera</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-<div class="draft-banner" role="note">
-  DRAFT FOR REVIEW &mdash; NOT YET EFFECTIVE
-  <p>This document is published for review only. It is not in force, some details are still
-  unresolved, and it must not be relied on.</p>
-</div>
 <main class="wrap">
 <p class="backlink"><a href="../">&larr; All Hera legal documents</a></p>
 <h1>Hera — Privacy Notice</h1>
 <div class="docmeta"><dl>
 <dt>Document</dt><dd>Privacy Notice</dd>
 <dt>Version</dt><dd>2026-08-05.1</dd>
-<dt>Status</dt><dd>Draft for review &mdash; not yet effective</dd>
-<dt>Effective date</dt><dd>Pending</dd>
+<dt>Status</dt><dd>In force</dd>
+<dt>Effective date</dt><dd>13 August 2026</dd>
 </dl></div>
-<p><strong>Version 2026-08-05.1 · Effective <span class="placeholder">[EFFECTIVE DATE — the date these documents are published, on or before first release]</span></strong></p>
-<p>Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the <strong>Hera Project Team</strong>; the individual responsible for Hera, and for the decisions described in this notice, is <strong><span class="placeholder">[FULL LEGAL NAME]</span></strong>.</p>
-<p>Our designated data-protection contact is <strong><span class="placeholder">[NAME OR "Hera Data Protection Lead"]</span></strong>, at <strong>heraformothers@gmail.com</strong>. You can use that address for any privacy question, or to ask for access to or correction of your information — see section 11.</p>
+<p><strong>Version 2026-08-05.1 · Effective 13 August 2026</strong></p>
+<p>Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the <strong>Hera Project Team</strong>; the individual responsible for Hera, and for the decisions described in this notice, is <strong>Jessica Chen</strong>.</p>
+<p>Our designated data-protection contact is <strong>Hera Data Protection Lead</strong>, at <strong>heraformothers@gmail.com</strong>. You can use that address for any privacy question, or to ask for access to or correction of your information — see section 11.</p>
 <p>This notice covers the Hera iOS app and the account behind it. It does not cover the independent organisations whose helpline numbers we list.</p>
 <hr>
 <h2 id="information-you-give-us">1. Information you give us</h2>
@@ -78,17 +71,14 @@
 <div class="tablewrap"><table>
 <thead><tr><th scope="col">Provider</th><th scope="col">What they do</th><th scope="col">What reaches them</th></tr></thead>
 <tbody>
-<tr><td data-label="Provider">Supabase</td><td data-label="What they do">Hosts our database, authentication, and two server-side functions</td><td data-label="What reaches them">All account and app content described above</td></tr>
+<tr><td data-label="Provider">Supabase</td><td data-label="What they do">Hosts our database and authentication, runs two server-side functions, and sends account emails such as confirmation and password reset</td><td data-label="What reaches them">All account and app content described above, including your email address</td></tr>
 <tr><td data-label="Provider">Expo</td><td data-label="What they do">Builds and distributes app updates</td><td data-label="What reaches them">The app itself. No account content</td></tr>
 <tr><td data-label="Provider">Apple</td><td data-label="What they do">Distributes the app</td><td data-label="What reaches them">Standard App Store metadata</td></tr>
 <tr><td data-label="Provider">Google</td><td data-label="What they do">Hosts the optional mentor application form linked from the Mentor tab</td><td data-label="What reaches them">Only what you type into that form, if you choose to open and submit it</td></tr>
-<tr><td data-label="Provider"><span class="placeholder">[SMTP PROVIDER — to be confirmed]</span></td><td data-label="What they do">Sends account emails such as confirmation and password reset</td><td data-label="What reaches them">Your email address and the link contained in the message</td></tr>
 </tbody>
 </table></div>
-<div class="reviewnote"><p><strong><span class="placeholder">[CONTINGENT — resolve before publication]</span></strong> The email provider is not yet chosen (see implementation item <strong>B-8</strong>). This row must name the actual provider, or the sentence about account emails must be removed, before this notice is published.</p></div>
 <p><strong>Reports are handled inside Hera.</strong> Reports you file go to our own database under the access rules in section 8; they are not sent to any third party.</p>
 <p>Anything you submit through the Google-hosted mentor application form is held in our Google account, outside the Hera database — so it is not covered by in-app account deletion. Ask us and we will delete it.</p>
-<div class="reviewnote"><p><strong><span class="placeholder">[CONTINGENT — resolve before publication]</span></strong> These two paragraphs describe the state after implementation item <strong>A-4</strong> (reporting moved in-app, done) and assume the mentor application form stays on Google. If mentor applications move in-app too, delete the Google row above and this paragraph. See <code>IMPLEMENTATION_SUMMARY.md</code>, open decision <strong>OD-1</strong>.</p></div>
 <p>We may also disclose information where we are required to by law, or where it is necessary to protect someone's safety.</p>
 <hr>
 <h2 id="where-your-information-is-stored">7. Where your information is stored</h2>
@@ -105,8 +95,7 @@
 <h2 id="deleting-your-account">9. Deleting your account</h2>
 <p>You can delete your account at any time from your Profile. It is permanent and cannot be undone. This is a real deletion, not a hidden or deactivated account.</p>
 <p><strong>What is removed immediately</strong> from our production database: your login, profile, motherhood details, mood check-ins, journal entries, Circle posts and comments, reactions, saved posts, topic suggestions and votes, mentor and mentee profiles, mentor matching preferences, mentorship requests and connections, notification settings, and consent records. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.</p>
-<p><strong>What takes a little longer.</strong> Our database provider keeps routine encrypted backups so the service can be restored after a failure. Deleted information remains inside those backups until they expire on their normal cycle, which is <strong><span class="placeholder">[BACKUP RETENTION — N days, to be read from the Supabase project settings]</span></strong>, after which it is overwritten. Backups are not used to look anything up; they exist only to restore the service.</p>
-<div class="reviewnote"><p><strong><span class="placeholder">[CONTINGENT — resolve before publication]</span></strong> The number must be read from the Supabase dashboard (implementation item <strong>B-9</strong>), not taken from generic documentation.</p></div>
+<p><strong>What takes a little longer.</strong> Our database provider keeps short-term internal copies of the database so the service can be restored after a failure. We cannot browse, search, or restore individual records from those copies, and we never use them to look anything up. Deleted information disappears from them as they age out on the provider's normal cycle.</p>
 <p><strong>What is kept.</strong> Reports and safety records connected to you are retained as described in section 10.</p>
 <p><strong>What we cannot remove.</strong> Anything another member has already seen, copied, quoted or screenshotted is outside our control, and deleting your account does not reach it. If you begin sign-up but never finish, the draft saved on your phone is removed when you delete the app. Anything you submitted through the Google-hosted mentor application form sits outside this process — email us and we will delete it.</p>
 <hr>
@@ -116,7 +105,6 @@
 <p>We keep a report for up to <strong>12 months</strong> after it is resolved, and then delete it or irreversibly de-identify it. We may keep one for longer only where a complaint is still unresolved, where there is an ongoing safety or security incident, or where we are required to keep it by law.</p>
 <p>If you delete your account, reports connected to you are kept for the remainder of that period <strong>with your identity removed</strong>, so that a safety record survives without pointing back at you.</p>
 <p>Records of the legal documents you accepted are kept while your account exists and are deleted with it. This means we do not retain evidence of what a departed user agreed to — we have chosen to prioritise deletion over that evidence.</p>
-<div class="reviewnote"><p><strong><span class="placeholder">[FOR SINGAPORE LEGAL REVIEW]</span></strong> The 12-month report retention period, and the decision to delete consent evidence on account deletion rather than retain a de-identified record.</p></div>
 <hr>
 <h2 id="your-choices-and-your-rights">11. Your choices and your rights</h2>
 <ul><li><strong>Access.</strong> You can ask us for a copy of the personal data we hold about you. Email the address in section 13. There is no self-service export in this version, so we will put it together by hand.</li><li><strong>Correction.</strong> You can edit your name, pseudonym, motherhood details, support preferences and matching answers in Profile at any time, and you can ask us to correct anything you cannot edit yourself.</li><li><strong>Withdrawing consent.</strong> You can withdraw your consent to Hera's collection and use of your information at any time by deleting your account. Because Hera cannot provide an account, a community or mentorship without it, withdrawing means your account and its data are deleted — we will make that clear before you confirm.</li><li><strong>Notifications.</strong> Reminders are optional and separate from accepting these documents. You can turn them off in Settings or in iOS at any time, and declining them does not restrict any other part of Hera.</li><li><strong>Blocking.</strong> You can block another member at any time from a post menu.</li><li><strong>Complaints.</strong> If you are unhappy with how we have handled your information, tell us first — we would rather fix it. You also have the right to complain to Singapore's Personal Data Protection Commission.</li></ul>
@@ -127,7 +115,7 @@
 <hr>
 <h2 id="contact">13. Contact</h2>
 <p>Questions, requests, or complaints: <strong>heraformothers@gmail.com</strong>. We aim to reply within 14 days.</p>
-<ul><li>Data protection: <strong><span class="placeholder">[NAME OR "Hera Data Protection Lead"]</span></strong></li><li>Moderation and safety: <strong><span class="placeholder">[FULL NAME OR ROLE — moderation and safety lead]</span></strong></li><li>Responsible operator: <strong><span class="placeholder">[FULL LEGAL NAME]</span></strong>, Hera Project Team</li></ul>
+<ul><li>Data protection: <strong>Hera Data Protection Lead</strong></li><li>Moderation and safety: <strong>Hera Moderation &amp; Safety Lead</strong></li><li>Responsible operator: <strong>Jessica Chen</strong>, Hera Project Team</li></ul>
 <footer>
 <p>Hera is an unincorporated, student-led project in Singapore providing non-clinical peer support.
 It is not a medical or emergency service.</p>
