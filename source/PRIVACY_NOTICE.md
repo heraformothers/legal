@@ -174,6 +174,12 @@ Records of the legal documents you accepted are kept while your account exists a
 
 We aim to respond to any request within 14 days.
 
+### Optional matching answers {#matching}
+
+Part of the mentor survey is optional: your age range, employment status, marital status, and the ages of your children. Answering helps us score mentor recommendations more closely to your situation.
+
+These answers are only ever used to order the mentors we suggest. They are never used to exclude you from a match, they are never shown to other members, and leaving every one of them blank costs you nothing. You can change or clear them in Profile at any time, and they are deleted with your account.
+
 ---
 
 ## 12. Changes to this notice

@@ -124,11 +124,17 @@ def render(markdown: str) -> tuple[str, str]:
         if heading:
             level = len(heading.group(1))
             text = heading.group(2).strip()
+            # "## Title {#custom-id}" pins the anchor the app links to.
+            explicit = re.search(r"\s*\{#([a-z0-9-]+)\}$", text)
+            anchor = None
+            if explicit:
+                anchor = explicit.group(1)
+                text = text[: explicit.start()].strip()
             if level == 1 and not title:
                 title = re.sub(r"<[^>]+>", "", text)
                 out.append(f"<h1>{inline(text)}</h1>")
             else:
-                out.append(f'<h{level} id="{slugify(text)}">{inline(text)}</h{level}>')
+                out.append(f'<h{level} id="{anchor or slugify(text)}">{inline(text)}</h{level}>')
             index += 1
             continue
 
