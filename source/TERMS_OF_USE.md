@@ -114,7 +114,17 @@ Mentors offer peer support based on their own experience. They cannot give you m
 
 Mentors agree to a separate **Mentor Confidentiality, Boundaries and Conduct Agreement** before they can be listed.
 
-**What mentorship is in this version.** You can see approved mentors, send a mentor a request with a short introduction, and a mentor can accept or decline it. Where a request is accepted, both of you can see that you are connected. **Hera does not provide private messaging in this version.** We will not introduce it without updating these Terms first.
+**What mentorship is in this version.** You can see approved mentors who are free to take someone on, send a mentor a request with a short introduction, and a mentor can accept or decline it. Where a request is accepted, the two of you can message each other privately in Hera.
+
+**One at a time.** In this version a mentor supports one mother at a time, and you have one mentor at a time. While a mentor is matched she does not appear to anyone else looking for support. When a mentorship ends, both of you are free to match again.
+
+**Messages between a matched mentor and mentee are visible only to the two of you.**
+
+**They are not end-to-end encrypted**, and we do not continuously monitor them. We can access message content if you report a conversation to us. The other person can screenshot, copy, or repeat anything you send.
+
+Messages cannot be individually deleted. Deleting your account removes your messages from our servers.
+
+Either you or your mentor can end a mentorship, which stops new messages; the conversation history remains visible to both of you.
 
 Hera never discloses your phone number, email address or other contact details to another member, and members must not ask each other for them. Communication outside Hera is not supported or permitted in this version. If you choose to contact another member outside Hera anyway, you do so entirely at your own risk: none of Hera's protections — reporting, blocking, moderation, or any record of what was said — apply there.
 

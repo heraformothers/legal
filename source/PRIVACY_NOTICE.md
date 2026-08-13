@@ -26,6 +26,7 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 | A separate mentor application form, if you open one | You, if you apply through the form linked in the Mentor tab | That form is hosted by **Google**, not by Hera — see section 6 |
 | Mentor matching preferences — what you need guidance in, roughly how much time you have each week, and your preferred way of keeping in touch. **Optionally**, and only if you choose to answer: your age range, employment status, marital status, and the ages of your children | You, in the mentor survey | To score mentor recommendations. The optional answers are never used to exclude you from a match, and leaving them blank costs you nothing |
 | A short introduction you send with a mentor request, and the record of the request and its outcome | You, in the Mentor tab | To run mentorship |
+| Messages you send to your matched mentor or mentee, and when you sent them | You, in the mentorship conversation | To deliver the conversation to the other person and to show you both its history |
 | Notification preferences | You, during onboarding or in Settings | To send only the reminders you asked for |
 | A record that you accepted or withdrew a given legal document, its version, when, and from which app version | Generated when you tap accept | To show what you agreed to and to gate features that require agreement |
 
@@ -74,6 +75,9 @@ It is still linked to your account internally, so that we can act on safety repo
 
 - To create, secure, and operate your account
 - To confirm that only invited people can complete registration during this limited rollout
+- To recognise an address we invited to be a peer mentor, and to grant that account the mentor role when it signs up
+- To show a mentor's profile — the name she chose, what she has written about herself, what she can help with, and the languages she speaks — to mothers looking for support
+- To deliver messages between a matched mentor and mentee
 - To show your posts and comments to the community according to the anonymity choice you made
 - To keep your journal and mood check-ins private to you
 - To recommend mentor matches and to run mentorship once both sides agree
@@ -121,10 +125,11 @@ Some of our other providers operate outside Singapore: app builds and updates ar
 - You can lock your journal behind Face ID on your device. This protects the journal screen in the app; it does not separately encrypt what is stored, and it is skipped if your phone has no biometric set up.
 - Passwords are handled by our authentication provider; Hera's own code never receives them.
 - Data is encrypted at rest by our hosting provider.
+- **Messages between mentors and mentees are not end-to-end encrypted.** They are protected in transit and at rest, but they are readable by our infrastructure in principle, and we can access them if you report a conversation.
 
 **Who can reach your information.** It is worth being precise about this, because "private" can mean several different things:
 
-- **Other members** see only what you choose to publish, under the name or pseudonym you chose. They never see your journal, your mood check-ins, your email address, your reports, or the identity behind an anonymous post.
+- **Other members** see only what you choose to publish, under the name or pseudonym you chose, and — if you are matched with them — the messages you send them. They never see your journal, your mood check-ins, your email address, your reports, or the identity behind an anonymous post.
 - **In-app moderators** can review, hide and remove Circle content and can identify the author of anonymous content. Moderator tools give **no** access to journal entries or mood check-ins.
 - **Project administrators** are a small number of named people on the Hera team who administer the database and hosting account. Journal entries and mood check-ins are protected by account-level database access controls and are not available through ordinary moderator functions. However, a limited number of authorised project administrators with infrastructure-level access **may technically access information** through our hosting and database tools where reasonably necessary for security, maintenance, support, legal compliance or incident response. They do not routinely read private journal entries or mood check-ins, and casual access is prohibited.
 - **Our infrastructure providers** hold the data on their systems and can technically access it as part of running those systems, subject to their own terms and security commitments.
@@ -139,7 +144,7 @@ No system is completely secure, and we cannot guarantee that your information wi
 
 You can delete your account at any time from your Profile. It is permanent and cannot be undone. This is a real deletion, not a hidden or deactivated account.
 
-**What is removed immediately** from our production database: your login, profile, motherhood details, mood check-ins, journal entries, Circle posts and comments, reactions, saved posts, topic suggestions and votes, mentor and mentee profiles, mentor matching preferences, mentorship requests and connections, notification settings, and consent records. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.
+**What is removed immediately** from our production database: your login, profile, motherhood details, mood check-ins, journal entries, Circle posts and comments, reactions, saved posts, topic suggestions and votes, mentor and mentee profiles, mentor matching preferences, mentorship requests and connections, the messages you sent in a mentorship conversation, notification settings, and consent records. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.
 
 **What takes a little longer.** Our database provider keeps short-term internal copies of the database so the service can be restored after a failure. We cannot browse, search, or restore individual records from those copies, and we never use them to look anything up. Deleted information disappears from them as they age out on the provider's normal cycle.
 
