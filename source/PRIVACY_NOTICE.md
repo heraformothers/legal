@@ -16,8 +16,8 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 |---|---|---|
 | Email address and password | You, at sign-up | To create and secure your account. Your password is handled entirely by our authentication provider; Hera's own code never sees or stores it. |
 | Your confirmation that you are 18 or older | You, at sign-up | To record that you confirmed you are eligible to use Hera |
-| A profile photo, if you add one | You, in Profile | To show you to the members you connect with — on a mentorship request, in Messages and, for a peer mentor, on her listing. It is stored on our servers and is not public on the internet; any signed-in member's app can be shown it through a link that expires. You can remove it at any time |
-| Display name, and a community pseudonym | You, at sign-up or in Profile | To show you to yourself and, where you post under your name, to others. Both are always set — if you leave them blank we generate them, and you can change either at any time. The pseudonym is also the name shown on your anonymous posts |
+| A profile photo, if you add one | You, in Profile | To show you to other members — on a mentorship request, in Messages, beside your Circle name on posts and replies you do not make anonymously, and, for a peer mentor, on her listing. It is stored on our servers and is not public on the internet; any signed-in member's app can be shown it through a link that expires. You can remove it at any time |
+| Display name, and a community pseudonym (your Circle name) | You, at sign-up or in Profile | Your display name is used in peer support. Your Circle name is what other members see on your Circle posts and replies; your display name is never shown in Circle. Both are always set — if you leave them blank we generate them — and you can change either at any time |
 | Motherhood stage (which may include "Pregnant"), baby age (free text), support needs, feelings you selected, and whether you want to act as a mentor or mentee | You, during onboarding or in Profile | To personalise the app and to score mentor recommendations |
 | Mood check-ins — a mood value, label, emoji and optional tags | You, in the Care tab | To show you your own mood history |
 | Journal entries — free text you write, including anything you save from the gentle exercises | You, in the Care tab | To give you a private place to write |
@@ -68,7 +68,7 @@ Some of what you put into Hera is health-related or close to it: your mood check
 
 ## 4. Posting anonymously in Circle
 
-When you post anonymously, other members see only "Anonymous mother" with nothing identifying you. Comments are always posted anonymously. The app's technical controls prevent another user from retrieving the author of an anonymous post — the author's identity is not sent to other members' devices at all.
+In Circle, other members see your Circle name and, if you have one, your profile photo — never your real name. When you choose to post or reply anonymously, they see only "Anonymous mother", with no name and no photo. The app's technical controls prevent another user from retrieving the author of anonymous content — the author's identity is not sent to other members' devices at all. Content you posted anonymously before this version stays anonymous.
 
 It is still linked to your account internally, so that we can act on safety reports and enforce the Terms. Moderators and administrators can identify the author of anonymous content when they need to.
 
