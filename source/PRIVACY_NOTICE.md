@@ -1,8 +1,8 @@
 # Hera — Privacy Notice
 
-**Version 2026-08-05.1 · Effective 13 August 2026**
+**Version 2026-10-03.1 · Effective 13 August 2026**
 
-Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team**; the individual responsible for Hera, and for the decisions described in this notice, is **Jessica Chen**.
+Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team** — the Hera team — which is responsible for Hera and for the decisions described in this notice.
 
 Our designated data-protection contact is **Hera Data Protection Lead**, at **heraformothers@gmail.com**. You can use that address for any privacy question, or to ask for access to or correction of your information — see section 11.
 
@@ -16,6 +16,7 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 |---|---|---|
 | Email address and password | You, at sign-up | To create and secure your account. Your password is handled entirely by our authentication provider; Hera's own code never sees or stores it. |
 | Your confirmation that you are 18 or older | You, at sign-up | To record that you confirmed you are eligible to use Hera |
+| A profile photo, if you add one | You, in Profile | To show you to the members you connect with — on a mentorship request, in Messages and, for a peer mentor, on her listing. It is stored on our servers and is not public on the internet; any signed-in member's app can be shown it through a link that expires. You can remove it at any time |
 | Display name, and a community pseudonym | You, at sign-up or in Profile | To show you to yourself and, where you post under your name, to others. Both are always set — if you leave them blank we generate them, and you can change either at any time. The pseudonym is also the name shown on your anonymous posts |
 | Motherhood stage (which may include "Pregnant"), baby age (free text), support needs, feelings you selected, and whether you want to act as a mentor or mentee | You, during onboarding or in Profile | To personalise the app and to score mentor recommendations |
 | Mood check-ins — a mood value, label, emoji and optional tags | You, in the Care tab | To show you your own mood history |
@@ -25,8 +26,10 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 | Mentor application — the name you ask us to use, what you tell us about your experience, and your application status | You, if you apply to mentor | To assess and list mentors. We follow up using your account email; we do not ask for a second contact detail |
 | A separate mentor application form, if you open one | You, if you apply through the form linked in the Mentor tab | That form is hosted by **Google**, not by Hera — see section 6 |
 | Mentor matching preferences — what you need guidance in, roughly how much time you have each week, and your preferred way of keeping in touch. **Optionally**, and only if you choose to answer: your age range, employment status, marital status, and the ages of your children | You, in the mentor survey | To score mentor recommendations. The optional answers are never used to exclude you from a match, and leaving them blank costs you nothing |
-| A short introduction you send with a mentor request, and the record of the request and its outcome | You, in the Mentor tab | To run mentorship |
-| Messages you send to your matched mentor or mentee, and when you sent them | You, in the mentorship conversation | To deliver the conversation to the other person and to show you both its history |
+| A short introduction you send with a mentor request, and the record of the request and its outcome, including any request to reconnect after a mentorship ended | You, in the Mentor tab | To run mentorship. When you send a request, the mentor is shown your display name, your profile photo if you have one, your motherhood stage and journey, the age of your youngest child, the support you are looking for (including anything you wrote under "other"), and how much time you hope to have each week |
+| Messages, photos, files and voice notes you send to your matched mentor or mentee; when you sent them; whether a message was edited or deleted; and when each of you last read the conversation | You, in the mentorship conversation | To deliver the conversation to the other person, to show you both its history, and to show each of you when the other has read it |
+| The original text of a message you edit or delete | Generated when you edit or delete a message | Kept in a restricted archive that no member — including you — can see in the app, so that a report about the conversation can still be looked into. It is deleted with the conversation (section 9) |
+| In-app notifications — for example that someone replied to your post or answered your mentor request — and whether you have read them | Generated by activity that involves you | To show your notification history. Kept until your account is deleted |
 | Notification preferences | You, during onboarding or in Settings | To send only the reminders you asked for |
 | A record that you accepted or withdrew a given legal document, its version, when, and from which app version | Generated when you tap accept | To show what you agreed to and to gate features that require agreement |
 
@@ -39,9 +42,9 @@ Very little.
 - **App version**, and a basic device-compatibility signal, stored only alongside your consent records.
 - **A rate-limiting counter.** When you type your email address at the first step of sign-up, we check whether it is already registered so you are not asked to fill in seven steps first. To stop that check being abused to discover who has an account, we keep a counter against a **scrambled (hashed) form of the network address** the request came from. The address itself is never stored, and the counter is not connected to your account.
 
-Some information is kept **only on your own phone**, and never sent to us: the app's local copy of your profile and journal entries, your preferences, the members you have blocked, and — if you begin sign-up and do not finish — a saved draft of your answers, including the email address you typed. Deleting the app removes all of it.
+Some information is kept **on your own phone**: a local copy of your profile and journal entries (which are also stored on our servers, as described above), your in-app preferences, and — if you begin sign-up and do not finish — a saved draft of your answers, including the email address you typed. The sign-up draft and those preferences are never sent to us. Deleting the app removes all of it from the phone.
 
-We do **not** collect: IP addresses, device fingerprints, advertising identifiers, analytics events, crash reports, contacts, photos, camera or microphone data, or your location. There is no analytics SDK, no crash-reporting SDK, no advertising SDK, and no AI or large-language-model service in the app.
+We do **not** collect: IP addresses, device fingerprints, advertising identifiers, analytics events, crash reports, contacts, or your location, and Hera does not use your camera. Hera opens your photo library or microphone only when you choose a photo or file to send or to use as your profile photo, or record a voice note — and only that photo, file or recording reaches us (section 1). There is no analytics SDK, no crash-reporting SDK, no advertising SDK, and no AI or large-language-model service in the app.
 
 **Reminders are scheduled on your phone**, not sent from our servers, so this version does not collect or store a push-notification token. If we later add reminders sent from our servers, we will update this notice first. Any reminder we ever send will use generic wording — it will never include journal text, a mood value, pregnancy information, report details, or anything else sensitive on your lock screen.
 
@@ -77,7 +80,8 @@ It is still linked to your account internally, so that we can act on safety repo
 - To confirm that only invited people can complete registration during this limited rollout
 - To recognise an address we invited to be a peer mentor, and to grant that account the mentor role when it signs up
 - To show a mentor's profile — the name she chose, what she has written about herself, what she can help with, and the languages she speaks — to mothers looking for support
-- To deliver messages between a matched mentor and mentee
+- To deliver messages, photos, files and voice notes between a matched mentor and mentee, and to show each of you when the other has read them
+- To keep a history of your in-app notifications
 - To show your posts and comments to the community according to the anonymity choice you made
 - To keep your journal and mood check-ins private to you
 - To recommend mentor matches and to run mentorship once both sides agree
@@ -96,14 +100,14 @@ We do not sell your information and we do not share it with third parties for th
 
 | Provider | What they do | What reaches them |
 |---|---|---|
-| Supabase | Hosts our database and authentication, runs two server-side functions, and sends account emails such as confirmation and password reset | All account and app content described above, including your email address |
+| Supabase | Hosts our database, authentication and file storage (profile photos, and the photos, files and voice notes sent in conversations), runs two server-side functions, and sends account emails such as confirmation and password reset | All account and app content described above, including your email address |
 | Expo | Builds and distributes app updates | The app itself. No account content |
 | Apple | Distributes the app | Standard App Store metadata |
-| Google | Hosts the optional mentor application form linked from the Mentor tab | Only what you type into that form, if you choose to open and submit it |
+| Google | Hosts the optional mentor application form linked from the Mentor tab, and the Hera team's email inbox (heraformothers@gmail.com) | Only what you type into that form, if you choose to submit it, and what you write in any email you send us |
 
 **Reports are handled inside Hera.** Reports you file go to our own database under the access rules in section 8; they are not sent to any third party.
 
-Anything you submit through the Google-hosted mentor application form is held in our Google account, outside the Hera database — so it is not covered by in-app account deletion. Ask us and we will delete it.
+Anything you submit through the Google-hosted mentor application form, and any email you send us, is held in our Google account, outside the Hera database — so it is not covered by in-app account deletion. Ask us and we will delete it. When you email us from inside the app, your own mail app opens with at most a subject line filled in; Hera adds nothing from your conversations, and nothing is sent until you send it.
 
 We may also disclose information where we are required to by law, or where it is necessary to protect someone's safety.
 
@@ -125,7 +129,7 @@ Some of our other providers operate outside Singapore: app builds and updates ar
 - You can lock your journal behind Face ID on your device. This protects the journal screen in the app; it does not separately encrypt what is stored, and it is skipped if your phone has no biometric set up.
 - Passwords are handled by our authentication provider; Hera's own code never receives them.
 - Data is encrypted at rest by our hosting provider.
-- **Messages between mentors and mentees are not end-to-end encrypted.** They are protected in transit and at rest, but they are readable by our infrastructure in principle, and we can access them if you report a conversation.
+- **Messages, photos, files and voice notes between mentors and mentees are not end-to-end encrypted.** They are protected in transit and at rest, but they are readable by our infrastructure in principle, and we can access them if you report a conversation.
 
 **Who can reach your information.** It is worth being precise about this, because "private" can mean several different things:
 
@@ -144,7 +148,9 @@ No system is completely secure, and we cannot guarantee that your information wi
 
 You can delete your account at any time from your Profile. It is permanent and cannot be undone. This is a real deletion, not a hidden or deactivated account.
 
-**What is removed immediately** from our production database: your login, profile, motherhood details, mood check-ins, journal entries, Circle posts and comments, reactions, saved posts, topic suggestions and votes, mentor and mentee profiles, mentor matching preferences, mentorship requests and connections, the messages you sent in a mentorship conversation, notification settings, and consent records. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.
+**What is removed immediately** from our production database: your login, profile, motherhood details, mood check-ins, journal entries, Circle posts and comments, reactions, saved posts, topic suggestions and votes, mentor and mentee profiles, mentor matching preferences, mentorship requests and connections, your profile photo, notification settings and notification history, and consent records.
+
+**Conversations are deleted whole.** A conversation belongs to both people in it, so deleting your account deletes every mentorship conversation you are part of — your messages and the other person's, the photos, files and voice notes either of you sent, and the archived text of edited or deleted messages — for both of you. The same happens to your conversation if the other person deletes her account. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.
 
 **What takes a little longer.** Our database provider keeps short-term internal copies of the database so the service can be restored after a failure. We cannot browse, search, or restore individual records from those copies, and we never use them to look anything up. Deleted information disappears from them as they age out on the provider's normal cycle.
 
@@ -156,7 +162,7 @@ You can delete your account at any time from your Profile. It is permanent and c
 
 ## 10. Reports and safety records
 
-When you report a post, a comment or a member, we keep a record of the report: what was reported, who reported it, the reason you gave, and what we did about it. We need it to act on the report, to notice repeated behaviour, and to be able to explain a decision later.
+When you report a post, a comment, a message or a member, we keep a record of the report: what was reported, who reported it, the reason you gave, and what we did about it. We need it to act on the report, to notice repeated behaviour, and to be able to explain a decision later.
 
 Reports are visible to you and to Hera's moderators. They are never shown to the member you reported and never to other members.
 
@@ -171,10 +177,10 @@ Records of the legal documents you accepted are kept while your account exists a
 ## 11. Your choices and your rights
 
 - **Access.** You can ask us for a copy of the personal data we hold about you. Email the address in section 13. There is no self-service export in this version, so we will put it together by hand.
-- **Correction.** You can edit your name, pseudonym, motherhood details, support preferences and matching answers in Profile at any time, and you can ask us to correct anything you cannot edit yourself.
+- **Correction.** You can edit your name, pseudonym and profile photo in Profile, and your support preferences and matching answers in the mentor survey, at any time. You can ask us to correct anything you cannot edit yourself.
 - **Withdrawing consent.** You can withdraw your consent to Hera's collection and use of your information at any time by deleting your account. Because Hera cannot provide an account, a community or mentorship without it, withdrawing means your account and its data are deleted — we will make that clear before you confirm.
 - **Notifications.** Reminders are optional and separate from accepting these documents. You can turn them off in Settings or in iOS at any time, and declining them does not restrict any other part of Hera.
-- **Blocking.** You can block another member at any time from a post menu.
+- **Blocking.** You can block another member at any time from a post menu or from a conversation's menu, and unblock them later under Profile → Blocked members.
 - **Complaints.** If you are unhappy with how we have handled your information, tell us first — we would rather fix it. You also have the right to complain to Singapore's Personal Data Protection Commission.
 
 We aim to respond to any request within 14 days.
@@ -199,4 +205,4 @@ Questions, requests, or complaints: **heraformothers@gmail.com**. We aim to repl
 
 - Data protection: **Hera Data Protection Lead**
 - Moderation and safety: **Hera Moderation & Safety Lead**
-- Responsible operator: **Jessica Chen**, Hera Project Team
+- Responsible for Hera: **the Hera team**

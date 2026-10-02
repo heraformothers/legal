@@ -1,10 +1,10 @@
 # Hera — Terms of Use
 
-**Version 2026-08-05.1 · Effective 13 August 2026**
+**Version 2026-10-03.1 · Effective 13 August 2026**
 
 These Terms are an agreement between you and the operator of Hera. By creating an account or using Hera, you agree to them and to the Privacy Notice. If you do not agree, do not use Hera.
 
-Hera is operated as an unincorporated, student-led project with no registered legal entity. It is run by the **Hera Project Team**, and the individual responsible for it is **Jessica Chen**, who also holds the Apple Developer account through which Hera is distributed. Hera is not operated, sponsored, endorsed or supervised by any university, hospital, clinic or other organisation.
+Hera is operated as an unincorporated, student-led project with no registered legal entity. It is run by the **Hera Project Team** — the Hera team — which is responsible for it. Hera is distributed through an individual Apple Developer account held by a member of the Hera team. Hera is not operated, sponsored, endorsed or supervised by any university, hospital, clinic or other organisation.
 
 Hera is free. There are no purchases, subscriptions or payments of any kind in the app.
 
@@ -100,7 +100,7 @@ We may review, hide, or remove content and restrict or suspend accounts where we
 
 We are a small team and **we do not review content before it is posted.** During this initial rollout we check reports at least once a day and aim to review a report within 24 hours. That is a target we work to, not a guarantee, and it is not an emergency-monitoring service: no one is watching the app in real time, and **if you or someone else is in danger you must contact emergency services directly.**
 
-Hera also applies automated checks to new posts. Content matching a small set of clearly prohibited patterns may be blocked or held before it appears. These checks are simple and imperfect: they will miss things, and they may occasionally hold something harmless.
+Hera also applies automated checks to new posts. Content matching a small set of clearly prohibited patterns may be blocked or held before it appears. These checks are simple and imperfect: they will miss things, and they may occasionally hold something harmless. Private mentorship conversations — including photos, files and voice notes sent in them — are not checked automatically and are not reviewed unless they are reported.
 
 Where we act on your content or your account, we will tell you what we did where it is practical and safe to do so.
 
@@ -116,13 +116,13 @@ Mentors agree to a separate **Mentor Confidentiality, Boundaries and Conduct Agr
 
 **What mentorship is in this version.** You can see approved mentors who are free to take someone on, send a mentor a request with a short introduction, and a mentor can accept or decline it. Where a request is accepted, the two of you can message each other privately in Hera.
 
-**One at a time.** In this version a mentor supports one mother at a time, and you have one mentor at a time. While a mentor is matched she does not appear to anyone else looking for support. When a mentorship ends, both of you are free to match again.
+**One mentor at a time.** You have one mentor at a time. A mentor chooses how many mothers she can support at once, up to ten; once she has reached that number she does not appear to anyone else looking for support until a place frees up. When a mentorship ends, you are free to request a mentor again.
 
-**Messages between a matched mentor and mentee are visible only to the two of you.**
+**Messages between a matched mentor and mentee — including photos, files and voice notes — are visible in the app only to the two of you.**
 
 **They are not end-to-end encrypted**, and we do not continuously monitor them. We can access message content if you report a conversation to us. The other person can screenshot, copy, or repeat anything you send.
 
-Messages cannot be individually deleted. Deleting your account removes your messages from our servers.
+You can edit or delete a message you sent for 15 minutes after sending it. The other person will see that it was edited or deleted, and we keep the original text in a restricted archive so that a report can still be looked into (see the Privacy Notice). Deleting your account deletes your conversations from our servers — both people's messages and files — for both of you.
 
 Either you or your mentor can end a mentorship, which stops new messages; the conversation history remains visible to both of you.
 

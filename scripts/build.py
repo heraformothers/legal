@@ -327,7 +327,7 @@ one at Hera is monitoring the app for people in danger.</p>
     <td data-label="Who to contact">Hera Moderation &amp; Safety Lead,
     at <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></td></tr>
 <tr><td data-label="What you need">Who is responsible for Hera</td>
-    <td data-label="Who to contact">Jessica Chen, Hera Project Team</td></tr>
+    <td data-label="Who to contact">The Hera team</td></tr>
 </tbody></table></div>
 <h2 id="crisis-resources">Crisis resources in Singapore</h2>
 <p>These are independent organisations. Hera does not control, endorse, or take responsibility for
@@ -395,7 +395,9 @@ directly &mdash; in Singapore, <strong>995</strong> for an ambulance or <strong>
 police. Further numbers are listed on our <a href="../support/">Support page</a>.</p></div>
 
 <h2 id="what-you-choose-to-share">What you choose to share</h2>
-<p>A mentor sees your first name or display name and what you write to her. Share only what you are
+<p>When you send a request, a mentor sees your display name, your profile photo if you have one, your
+motherhood stage, the age of your youngest child, the support you are looking for, the time you hope
+to have each week, and what you write to her. Share only what you are
 comfortable sharing, and take the time you want before sharing more. You are never obliged to
 disclose a diagnosis, your address, your workplace, or anything else about your family.</p>
 <p>Mentors agree to keep what you tell them private. That is a promise Hera holds them to, but it is
