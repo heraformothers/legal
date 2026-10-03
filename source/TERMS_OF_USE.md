@@ -74,7 +74,7 @@ Use the trigger-warning option when your post covers material which may be diffi
 
 Talking honestly about how hard motherhood is — including distress, low mood, intrusive thoughts and asking for help — is exactly what the Circle is for. These rules are not intended to stop you saying how you actually feel.
 
-In Circle you appear under your **Circle name** — a name you choose, never your real name — and, if you have added one, your profile photo. You can choose to post or reply anonymously instead; other members will then see only "Anonymous mother", with no name or photo. Posts and replies you made anonymously before this version stay anonymous.
+In Circle you appear under your **Circle name** — a name you choose, never your real name, and never with your profile photo. You can choose to post or reply anonymously instead; other members will then see only "Anonymous mother". Posts and replies you made anonymously before this version stay anonymous.
 
 **Anonymity is limited to what other members see.** Every anonymous post remains linked internally to your account, and our moderators and administrators can identify you as the author. We keep this link so we can respond to safety reports and enforce these Terms. Post accordingly.
 
