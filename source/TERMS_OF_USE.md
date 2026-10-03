@@ -16,7 +16,7 @@ Hera is for adults aged 18 or above who are **pregnant or postpartum mothers**, 
 
 You must confirm that you are at least 18 years old when you create your account. If you cannot honestly confirm this, do not create an account.
 
-This first release is a **limited invitation-only rollout in Singapore**. Downloading Hera does not by itself give you access: you can only complete registration if the email address you use has been invited by the Hera team. If your address has not been invited, you will not be able to create an account. We may add or remove invitations at any time, and we may widen access in a later release.
+This first release is a **limited rollout in Singapore**. Anyone who meets the conditions above can create an account as a member. Becoming a peer mentor is different: it is by invitation and approval from the Hera team only, and creating an account never makes you a mentor.
 
 You may hold one account. You must give accurate information when you register and keep it up to date.
 

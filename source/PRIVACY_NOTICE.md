@@ -77,8 +77,7 @@ It is still linked to your account internally, so that we can act on safety repo
 ## 5. How we use your information
 
 - To create, secure, and operate your account
-- To confirm that only invited people can complete registration during this limited rollout
-- To recognise an address we invited to be a peer mentor, and to grant that account the mentor role when it signs up
+- To recognise an address we invited to be a peer mentor, and to grant that account the mentor role when it signs up or next signs in
 - To show a mentor's profile — the name she chose, what she has written about herself, what she can help with, and the languages she speaks — to mothers looking for support
 - To deliver messages, photos, files and voice notes between a matched mentor and mentee, and to show each of you when the other has read them
 - To keep a history of your in-app notifications
