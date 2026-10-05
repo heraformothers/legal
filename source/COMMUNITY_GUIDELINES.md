@@ -36,7 +36,7 @@ There is a difference between saying you are struggling — always welcome — a
 
 ## Anonymity
 
-You can post anonymously, and comments are always anonymous. Other members see only "Anonymous mother".
+Your posts and comments show your name. You can choose to post or comment anonymously instead, and then other members see your Circle nickname rather than your name. Content you posted before this version keeps the label it was posted under.
 
 **Anonymity is limited to what other members see.** Every anonymous post stays linked to your account internally, and Hera's moderators can identify you as the author. We keep that link so we can act on safety reports and enforce these rules. Post accordingly.
 

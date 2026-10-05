@@ -74,7 +74,7 @@ Use the trigger-warning option when your post covers material which may be diffi
 
 Talking honestly about how hard motherhood is — including distress, low mood, intrusive thoughts and asking for help — is exactly what the Circle is for. These rules are not intended to stop you saying how you actually feel.
 
-In Circle you appear under your **Circle name** — a name you choose, never your real name, and never with your profile photo. You can choose to post or reply anonymously instead; other members will then see only "Anonymous mother". Posts and replies you made anonymously before this version stay anonymous.
+In Circle, your posts and replies show your **display name**. If you choose to post or reply **anonymously**, they show your **Circle nickname** instead — a nickname you choose, which cannot be your display name. Your profile photo is never shown in Circle. Posts and replies published before this version keep the label they were published under.
 
 **Anonymity is limited to what other members see.** Every anonymous post remains linked internally to your account, and our moderators and administrators can identify you as the author. We keep this link so we can respond to safety reports and enforce these Terms. Post accordingly.
 
@@ -86,7 +86,7 @@ In Circle you appear under your **Circle name** — a name you choose, never you
 
 You keep ownership of what you write in Hera.
 
-For Circle posts, you are responsible for what you post, and you confirm you have the right to post it. Circle posts are displayed to signed-in Hera members and will be associated with your username unless you choose to make it anonymous.
+For Circle posts, you are responsible for what you post, and you confirm you have the right to post it. Circle posts are displayed to signed-in Hera members under your display name, or under your Circle nickname if you choose to post anonymously.
 
 So that Hera can work at all, you give us a limited permission to host, store, copy, transmit, display, moderate, hide and remove the content you put into Hera, for the sole purpose of operating, moderating and securing the service. This permission is non-exclusive, worldwide and royalty-free, it is not transferable to anyone else, and it ends when you delete your content or your account — except for copies retained in our routine backups until they expire, copies retained as part of a safety record under section 7, and anything other members have already seen, copied or screenshotted, which we cannot recall.
 
@@ -114,9 +114,9 @@ Mentors offer peer support based on their own experience. They cannot give you m
 
 Mentors agree to a separate **Mentor Confidentiality, Boundaries and Conduct Agreement** before they can be listed.
 
-**What mentorship is in this version.** You can see approved mentors who are free to take someone on, send a mentor a request with a short introduction, and a mentor can accept or decline it. Where a request is accepted, the two of you can message each other privately in Hera.
+**What mentorship is in this version.** You can see approved mentors who are free to take someone on, send a mentor a request with a short introduction, and a mentor can accept or decline it. A mentor who declines by mistake can take it back within a few seconds; the request then waits for her answer again. Where a request is accepted, the two of you can message each other privately in Hera.
 
-**One mentor at a time.** You have one mentor at a time. A mentor chooses how many mothers she can support at once, up to ten; once she has reached that number she does not appear to anyone else looking for support until a place frees up. When a mentorship ends, you are free to request a mentor again.
+**One mentor at a time.** You have one mentor at a time. A mentor chooses how many mothers she can support at once, up to ten; once she has reached that number she does not appear to anyone else looking for support until a place frees up. When a mentorship ends, you are free to request a mentor again, or either of you can ask to reconnect; reconnecting resumes the same conversation.
 
 **Messages between a matched mentor and mentee — including photos, files and voice notes — are visible in the app only to the two of you.**
 
