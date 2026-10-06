@@ -17,16 +17,16 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 | Email address and password | You, at sign-up | To create and secure your account. Your password is handled entirely by our authentication provider; Hera's own code never sees or stores it. |
 | Your confirmation that you are 18 or older | You, at sign-up | To record that you confirmed you are eligible to use Hera |
 | A profile photo, if you add one | You, in Profile | To show you to the members you connect with — on a mentorship request, in Messages and, for a peer mentor, on her listing. It is never shown in Circle. It is stored on our servers and is not public on the internet; any signed-in member's app can be shown it through a link that expires. You can remove it at any time |
-| Display name, and a Circle nickname | You, at sign-up or in Profile | Your display name is used in peer support, and is shown on the Circle posts and replies you publish normally. Your Circle nickname is shown instead when you choose to post or reply anonymously. Your nickname cannot be your display name. If you leave the nickname blank we generate a placeholder, but you must choose your own nickname before you can post anonymously. You can change either at any time |
+| Display name, and a Circle nickname | You, at sign-up or in Profile | Your display name is used in peer support. In Circle, other members see your Circle nickname; your display name is shown on a Circle post or reply only if you choose "Post with my name" for it. Your nickname cannot be your display name, and you must choose one before posting in Circle under it. You can change either at any time; content you have already published keeps the name it was published under |
 | Motherhood stage (which may include "Pregnant"), baby age (free text), support needs, feelings you selected, and whether you want to act as a mentor or mentee | You, during onboarding or in Profile | To personalise the app and to score mentor recommendations |
 | Mood check-ins — a mood value, label, emoji and optional tags | You, in the Care tab | To show you your own mood history |
 | Journal entries — free text you write, including anything you save from the gentle exercises | You, in the Care tab | To give you a private place to write |
-| Circle posts, comments, reactions, saved posts, and topic suggestions or votes — and, for each post and comment, whether you published it under your name or anonymously | You, in the Circle tab | To run the peer community, and to keep showing each post and comment under the name you chose when you published it |
+| Circle posts, comments, reactions, saved posts, and topic suggestions or votes — and, for each post and comment, the name it was published under (your nickname, or your display name if you chose it) | You, in the Circle tab | To run the peer community, and to keep showing each post and comment under the name it was published under, even if you later change your nickname or display name |
 | Reports you file and members you block, including the name a member was shown under when you blocked them | You | Safety and moderation. The name is kept so your blocked list shows the person as you saw them, and nothing more |
 | Mentor application — the name you ask us to use, what you tell us about your experience, and your application status | You, if you apply to mentor | To assess and list mentors. We follow up using your account email; we do not ask for a second contact detail |
 | A separate mentor application form, if you open one | You, if you apply through the form linked in the Mentor tab | That form is hosted by **Google**, not by Hera — see section 6 |
 | Mentor matching preferences — what you would like support with, and roughly how much time you would like each week | You, in the mentor survey | To score mentor recommendations |
-| Answers to questions earlier versions of the mentor survey asked and this version no longer asks — your preferred way of keeping in touch and, optionally, your age range, employment status, marital status and the ages of your children | You, only if you answered them in an earlier version | Not used for anything in this version. They are kept with your preferences until you delete your account, or until you ask us to delete them — see section 11 |
+| Answers to questions earlier versions of the mentor survey asked — your preferred way of keeping in touch and, optionally, your age range, employment status, marital status and the ages of all your children | You, only if you answered them in an earlier version | No longer collected. We deleted the answers in October 2026; of your children's ages, only your youngest child's age is kept, because it is part of your current support preferences |
 | A short introduction you send with a mentor request, and the record of the request and its outcome, including any request to reconnect after a mentorship ended | You, in the Mentor tab | To run mentorship. When you send a request, the mentor is shown your display name, your profile photo if you have one, what you wrote about yourself, your motherhood stage and journey, the age of your youngest child, the support you are looking for (including anything you wrote under "other"), and how much time you hope to have each week. Completing your support preferences does not send a request; a request is sent only when you choose a mentor and send it |
 | Messages, photos, files and voice notes you send to your matched mentor or mentee; when you sent them; whether a message was edited or deleted; and when each of you last read the conversation | You, in the mentorship conversation | To deliver the conversation to the other person, to show you both its history, and to show each of you when the other has read it |
 | The original text of a message you edit or delete | Generated when you edit or delete a message | Kept in a restricted archive that no member — including you — can see in the app, so that a report about the conversation can still be looked into. It is deleted with the conversation (section 9) |
@@ -67,15 +67,13 @@ Some of what you put into Hera is health-related or close to it: your mood check
 
 ---
 
-## 4. Your name in Circle, and posting anonymously
+## 4. Your name in Circle
 
-When you post or reply in Circle normally, other members see your **display name**. When you choose to post or reply **anonymously**, they see your **Circle nickname** instead, and your display name is not sent to their devices at all. The composer tells you which name will be shown before you post. Your profile photo is never shown in Circle.
+In Circle, other members see your **Circle nickname** — a nickname you choose, which cannot be your display name. Your display name is shown on a post or reply only if you choose **"Post with my name"** (or "Use my name" on a reply) for that post or reply; it is never shown just because of another setting. The composer tells you which name will be shown before you post. Your profile photo is never shown in Circle.
 
-The choice is recorded with each post and reply when you publish it and does not change afterwards. Content published before this version keeps the label it was published under: posts and replies you made under your Circle name continue to show your Circle name, and content you made anonymously continues to show "Anonymous mother". None of it is changed to show your display name.
+The name a post or reply is published under is recorded when you publish it and does not change afterwards — not if you later change your nickname, and not if you change your display name. Content published before this version keeps exactly the label it already had: posts and replies shown under your Circle name continue to show it, and content you posted anonymously continues to show "Anonymous mother".
 
-If your nickname is ever blank or the same as your display name, anonymous content shows "Anonymous mother" rather than risk showing your name.
-
-It is still linked to your account internally, so that we can act on safety reports and enforce the Terms. Moderators and administrators can identify the author of anonymous content when they need to.
+Under a nickname, your display name is not sent to other members' devices at all. Every post and reply — under a nickname or anonymous — is still linked to your account internally, so that we can act on safety reports and enforce the Terms. Moderators and administrators can identify its author when they need to.
 
 ---
 
@@ -86,7 +84,7 @@ It is still linked to your account internally, so that we can act on safety repo
 - To show a mentor's profile — the name she chose, what she has written about herself, what she can help with, and the languages she speaks — to mothers looking for support
 - To deliver messages, photos, files and voice notes between a matched mentor and mentee, and to show each of you when the other has read them
 - To keep a history of your in-app notifications
-- To show your posts and comments to the community under the name you chose for each — your display name, or your Circle nickname if you posted anonymously — and to show you a list of your own posts
+- To show your posts and comments to the community under the name each was published under — your Circle nickname, or your display name where you chose it — and to show you a list of your own posts
 - To keep your journal and mood check-ins private to you
 - To recommend mentor matches and to run mentorship once both sides agree
 - To review reports and moderate content, which includes identifying the author of anonymous content where that is necessary for safety
@@ -137,7 +135,7 @@ Some of our other providers operate outside Singapore: app builds and updates ar
 
 **Who can reach your information.** It is worth being precise about this, because "private" can mean several different things:
 
-- **Other members** see only what you choose to publish, under the name or nickname you chose, and — if you are matched with them — the messages you send them. They never see your journal, your mood check-ins, your email address, your reports, or the display name behind an anonymous post.
+- **Other members** see only what you choose to publish, under the name or nickname you chose, and — if you are matched with them — the messages you send them. They never see your journal, your mood check-ins, your email address, your reports, or the display name behind a nickname or an anonymous post.
 - **In-app moderators** can review, hide and remove Circle content and can identify the author of anonymous content. Moderator tools give **no** access to journal entries or mood check-ins.
 - **Project administrators** are a small number of named people on the Hera team who administer the database and hosting account. Journal entries and mood check-ins are protected by account-level database access controls and are not available through ordinary moderator functions. However, a limited number of authorised project administrators with infrastructure-level access **may technically access information** through our hosting and database tools where reasonably necessary for security, maintenance, support, legal compliance or incident response. They do not routinely read private journal entries or mood check-ins, and casual access is prohibited.
 - **Our infrastructure providers** hold the data on their systems and can technically access it as part of running those systems, subject to their own terms and security commitments.
@@ -193,11 +191,8 @@ We aim to respond to any request within 14 days.
 
 ### Optional matching answers {#matching}
 
-Earlier versions of the mentor survey asked, optionally, for your age range, employment status, marital status and the ages of your children. This version no longer asks for them and does not use them for anything — not for matching, and they are never shown to other members.
+Earlier versions of the mentor survey asked, optionally, for your age range, employment status, marital status and the ages of your children, and for your preferred way of keeping in touch. This version does not ask for them and does not use them. In October 2026 we deleted the answers anyone had given, keeping only the age of your youngest child, which you still give in the survey and which a peer helper sees on your request.
 
-If you answered them in an earlier version, they are still stored with your preferences. The app does not currently let you clear them yourself: email us and we will delete them. They are also deleted with your account.
-
----
 
 ## 12. Changes to this notice
 

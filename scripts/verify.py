@@ -145,7 +145,7 @@ spot_checks = [
     ("privacy", "No alert is sent to any person"),
     ("privacy", "Hera does not offer a wellbeing questionnaire"),
     ("terms", "Hera is not an emergency service."),
-    ("terms", "Anonymity is limited to what other members see."),
+    ("terms", "A nickname only changes what other members see."),
     ("community-guidelines", "None of that breaks these rules."),
     ("mentor-agreement", "You are not a crisis service"),
 ]

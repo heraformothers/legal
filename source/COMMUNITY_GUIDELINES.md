@@ -34,11 +34,11 @@ There is a difference between saying you are struggling — always welcome — a
 
 ---
 
-## Anonymity
+## Your name in Circle
 
-Your posts and comments show your name. You can choose to post or comment anonymously instead, and then other members see your Circle nickname rather than your name. Content you posted before this version keeps the label it was posted under.
+Your posts and comments show your Circle nickname. Your name is shown only on a post or comment where you choose to use it. Each keeps the name it was posted under, and content you posted before this version keeps the label it was posted under.
 
-**Anonymity is limited to what other members see.** Every anonymous post stays linked to your account internally, and Hera's moderators can identify you as the author. We keep that link so we can act on safety reports and enforce these rules. Post accordingly.
+**A nickname only changes what other members see.** Every post and comment — under a nickname or anonymous — stays linked to your account internally, and Hera's moderators can identify you as the author. We keep that link so we can act on safety reports and enforce these rules. Post accordingly.
 
 ---
 

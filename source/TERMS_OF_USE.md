@@ -74,9 +74,9 @@ Use the trigger-warning option when your post covers material which may be diffi
 
 Talking honestly about how hard motherhood is — including distress, low mood, intrusive thoughts and asking for help — is exactly what the Circle is for. These rules are not intended to stop you saying how you actually feel.
 
-In Circle, your posts and replies show your **display name**. If you choose to post or reply **anonymously**, they show your **Circle nickname** instead — a nickname you choose, which cannot be your display name. Your profile photo is never shown in Circle. Posts and replies published before this version keep the label they were published under.
+In Circle, your posts and replies show your **Circle nickname** — a nickname you choose, which cannot be your display name. Your display name is shown only on a post or reply where you choose to use it. Your profile photo is never shown in Circle. Each post and reply keeps the name it was published under, even if you later change your nickname or display name, and content published before this version keeps the label it already had.
 
-**Anonymity is limited to what other members see.** Every anonymous post remains linked internally to your account, and our moderators and administrators can identify you as the author. We keep this link so we can respond to safety reports and enforce these Terms. Post accordingly.
+**A nickname only changes what other members see.** Every post and reply — under a nickname or anonymous — remains linked internally to your account, and our moderators and administrators can identify you as the author. We keep this link so we can respond to safety reports and enforce these Terms. Post accordingly.
 
 **Reporting and blocking.** You can report any post or comment from the post menu, and you can block another member. Blocking hides that member's posts and comments from you and hides yours from them, and it prevents a mentorship connection between you. Reports go to the Hera team; they are not shown to the member you reported, and other members cannot see them.
 
@@ -86,7 +86,7 @@ In Circle, your posts and replies show your **display name**. If you choose to p
 
 You keep ownership of what you write in Hera.
 
-For Circle posts, you are responsible for what you post, and you confirm you have the right to post it. Circle posts are displayed to signed-in Hera members under your display name, or under your Circle nickname if you choose to post anonymously.
+For Circle posts, you are responsible for what you post, and you confirm you have the right to post it. Circle posts are displayed to signed-in Hera members under your Circle nickname, or under your display name where you choose it.
 
 So that Hera can work at all, you give us a limited permission to host, store, copy, transmit, display, moderate, hide and remove the content you put into Hera, for the sole purpose of operating, moderating and securing the service. This permission is non-exclusive, worldwide and royalty-free, it is not transferable to anyone else, and it ends when you delete your content or your account — except for copies retained in our routine backups until they expire, copies retained as part of a safety record under section 7, and anything other members have already seen, copied or screenshotted, which we cannot recall.
 
