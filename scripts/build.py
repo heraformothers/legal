@@ -200,14 +200,14 @@ DOC_META = """<div class="docmeta"><dl>
 </dl></div>"""
 
 
-def inject_doc_meta(body: str, title: str, version: str) -> str:
+def inject_doc_meta(body: str, title: str, version: str, effective: str = EFFECTIVE_DATE) -> str:
     """Puts a structured version/status block directly under the <h1>."""
     marker = "</h1>"
     position = body.find(marker)
     if position == -1:
-        return DOC_META.format(title=html.escape(title), version=version, effective=EFFECTIVE_DATE) + body
+        return DOC_META.format(title=html.escape(title), version=version, effective=effective) + body
     position += len(marker)
-    return body[:position] + "\n" + DOC_META.format(title=html.escape(title), version=version, effective=EFFECTIVE_DATE) + body[position:]
+    return body[:position] + "\n" + DOC_META.format(title=html.escape(title), version=version, effective=effective) + body[position:]
 
 
 def page(title: str, body: str, *, back: bool = True, description: str = "", depth: int = 1) -> str:
@@ -276,7 +276,11 @@ def main() -> None:
         body, _ = render(markdown)
         version_match = re.search(r"Version\s+([0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]+)", markdown)
         version = version_match.group(1) if version_match else "unversioned"
-        body = inject_doc_meta(body, title, version)
+        # Each document carries its own effective date on its version line, so
+        # a revised document never inherits the date of the original set.
+        effective_match = re.search(r"Effective\s+([^*]+?)\*\*", markdown)
+        effective = html.escape(effective_match.group(1).strip()) if effective_match else EFFECTIVE_DATE
+        body = inject_doc_meta(body, title, version, effective)
         write(route, page(title, body, description=_blurb))
 
     # ------------------------------------------------------------ index at /
@@ -289,9 +293,8 @@ def main() -> None:
     )
     legal_body = f"""<h1>Hera &mdash; legal documents</h1>
 <div class="docmeta"><dl>
-<dt>Document set</dt><dd>{DOCUMENT_SET_VERSION}</dd>
 <dt>Status</dt><dd>In force</dd>
-<dt>Effective date</dt><dd>{EFFECTIVE_DATE}</dd>
+<dt>Versions</dt><dd>Each document shows its own version and effective date</dd>
 </dl></div>
 <p>These are the documents that govern using Hera. They are published here so they can be read
 before creating an account, and without signing in.</p>

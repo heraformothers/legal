@@ -1,6 +1,6 @@
 # Hera — Privacy Notice
 
-**Version 2026-10-03.1 · Effective 13 August 2026**
+**Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
 
 Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team** — the Hera team — which is responsible for Hera and for the decisions described in this notice.
 
@@ -41,7 +41,7 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 Very little.
 
 - **App version**, and a basic device-compatibility signal, stored only alongside your consent records.
-- **A rate-limiting counter.** When you type your email address at the first step of sign-up, we check whether it is already registered so you are not asked to fill in seven steps first. To stop that check being abused to discover who has an account, we keep a counter against a **scrambled (hashed) form of the network address** the request came from. The address itself is never stored, and the counter is not connected to your account.
+- **A rate-limiting counter.** When you type your email address at the first step of sign-up, we check whether it is already registered so you are not asked to fill in seven steps first — and, if you are signing up as a peer mentor, whether that address was invited to be one. To stop that check being abused to discover who has an account, we keep a counter against a **scrambled (hashed) form of the network address** the request came from. The address itself is never stored, and the counter is not connected to your account.
 
 Some information is kept **on your own phone**: a local copy of your profile and journal entries (which are also stored on our servers, as described above), your in-app preferences, and — if you begin sign-up and do not finish — a saved draft of your answers, including the email address you typed. The sign-up draft and those preferences are never sent to us. Deleting the app removes all of it from the phone.
 
@@ -196,7 +196,7 @@ Earlier versions of the mentor survey asked, optionally, for your age range, emp
 
 ## 12. Changes to this notice
 
-We version this notice. If we make a material change, we will ask you to read and acknowledge the new version in the app before you continue using the features that depend on it. Older versions remain available on request.
+We version this notice. If we make a material change, we will publish the new version at the same address, with its version and effective date at the top, and tell you about it in the app or by email. Older versions remain available on request.
 
 ---
 
