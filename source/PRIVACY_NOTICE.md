@@ -121,7 +121,7 @@ We may also disclose information where we are required to by law, or where it is
 
 Our database and authentication are hosted in **Singapore (ap-southeast-1)**.
 
-Some of our other providers operate outside Singapore: app builds and updates are distributed through Expo's infrastructure, which is primarily in the United States, and Apple's App Store infrastructure is global. Where personal data is handled outside Singapore, we rely on those providers' contractual and security commitments to protect it to a standard comparable to the protection it has here.
+Some of our other providers operate outside Singapore: app builds and updates are distributed through Expo's infrastructure, which is primarily in the United States; Apple's App Store infrastructure is global; and Google, which hosts our email inbox (where reports, feedback and support requests arrive) and the mentor application form, stores data on its own global infrastructure. Where personal data is handled outside Singapore, we rely on those providers' contractual and security commitments to protect it to a standard comparable to the protection it has here.
 
 ---
 
