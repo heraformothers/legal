@@ -1,6 +1,6 @@
 # Hera — Mentor Confidentiality, Boundaries and Conduct Agreement
 
-**Version 2026-08-05.1 · Effective 13 August 2026**
+**Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
 
 This agreement is for Hera mentors. You accept it before your mentor application can be submitted, and it applies for as long as you are listed as a mentor. It sits alongside the Terms of Use, the Privacy Notice and the Community Guidelines, which also apply to you as a member.
 
@@ -61,7 +61,7 @@ If a mother tells you she is in immediate danger, or that she is thinking of har
 1. **Tell her to contact emergency services now** — 995 for an ambulance, 999 for the police in Singapore — or to go to the nearest A&E.
 2. Stay warm and stay present if you can, but **do not take responsibility for her safety** and do not agree to be the person who keeps her safe.
 3. Do not promise to keep something confidential when someone's safety is at risk.
-4. **Report it to the Hera team** through the in-app report as soon as you reasonably can.
+4. **Report it to the Hera team** by emailing heraformothers@gmail.com as soon as you reasonably can.
 
 Hera does not monitor conversations and no one at Hera is watching in real time. Reporting a safety concern to Hera is **not** an emergency response and never substitutes for calling emergency services.
 
@@ -71,7 +71,7 @@ If a mother's situation is beyond peer support — and much of it will be — th
 
 ## 6. Telling us about concerns
 
-Report anything that worries you, including safety concerns, behaviour that breaks the Community Guidelines, someone asking you for contact details or money, or a situation you feel out of your depth in. Use the in-app report. You will not get in trouble for reporting something in good faith.
+Report anything that worries you, including safety concerns, behaviour that breaks the Community Guidelines, someone asking you for contact details or money, or a situation you feel out of your depth in. Email the Hera team at heraformothers@gmail.com — Report in a conversation's menu shows the address. You will not get in trouble for reporting something in good faith.
 
 If you are struggling yourself, you are a Hera member too. Step back, pause your availability, or end a connection — none of that requires an explanation.
 

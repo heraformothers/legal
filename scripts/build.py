@@ -36,6 +36,10 @@ SUPPORT_EMAIL = "heraformothers@gmail.com"
 # date below is the date the resolved set was published.
 EFFECTIVE_DATE = "13 August 2026"
 DOCUMENT_SET_VERSION = "2026-08-05.1"
+# The peer-support notice is written here rather than in source/, so its
+# version lives here too. Bump both, and legal_documents.peer_support_notice.
+PEER_SUPPORT_VERSION = "2026-10-07.1"
+PEER_SUPPORT_EFFECTIVE = "[PUBLICATION DATE]"
 
 
 # --------------------------------------------------------------- inline pass
@@ -362,9 +366,9 @@ the services they provide, and these numbers may change.</p>
     peer_body = f"""<h1>Peer Support &amp; Mentorship Safety</h1>
 <div class="docmeta"><dl>
 <dt>Document</dt><dd>Peer Support &amp; Mentorship Safety</dd>
-<dt>Version</dt><dd>{DOCUMENT_SET_VERSION}</dd>
+<dt>Version</dt><dd>{PEER_SUPPORT_VERSION}</dd>
 <dt>Status</dt><dd>In force</dd>
-<dt>Effective date</dt><dd>{EFFECTIVE_DATE}</dd>
+<dt>Effective date</dt><dd>{PEER_SUPPORT_EFFECTIVE}</dd>
 </dl></div>
 <p>You are shown this notice once, just before you send your first mentor request. It sets out what
 peer support at Hera is, and what it is not. It adds nothing to your agreement with Hera: every
@@ -409,10 +413,11 @@ a promise made by a volunteer, not a legal duty of confidence owed by a clinicia
 <h2 id="if-something-feels-wrong">If something feels wrong</h2>
 <p>Trust that feeling. You can end a mentorship at any time, without giving a reason and without
 telling the mentor why.</p>
-<p>Report a mentor to us from the Mentor tab, or email
-<a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>. Reports reach the Hera Moderation &amp; Safety
-Lead and are handled inside Hera; they are not passed to any third party. We can suspend or remove a
-mentor, and we will tell you what we have done.</p>
+<p>Report a mentor to us by emailing
+<a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a> &mdash; Report in a conversation's menu shows
+the address. There is no in-app report form. Reports reach the Hera Moderation &amp; Safety Lead in
+the Hera team's Google-hosted inbox. We can suspend or remove a mentor, and we will tell you what we
+have done.</p>
 
 <h2 id="more">The full terms</h2>
 <p>These points are stated in full in <a href="../terms/#mentorship">Terms of Use, section 8</a> and

@@ -64,7 +64,7 @@ The Circle is a shared space. When you post there, you agree to:
 - **No hate.** No abuse, harassment, slurs, or attacks on any person or group.
 - **No medical advice.** Share your experience; do not tell other members what to do about their health, medication, or their baby's health.
 - **No solicitation.** No selling, advertising, recruiting, or promotion.
-- **Report problems.** Use the report function rather than confronting a member yourself.
+- **Report problems.** Email the Hera team rather than confronting a member yourself — Report in the app shows the address.
 
 You also agree not to: impersonate anyone; post another person's private information; post content that is unlawful, sexually explicit, or graphically violent; post content that encourages self-harm, suicide, or disordered eating; scrape or republish other members' posts; or use Hera to disrupt or attack the service.
 
@@ -74,11 +74,11 @@ Use the trigger-warning option when your post covers material which may be diffi
 
 Talking honestly about how hard motherhood is — including distress, low mood, intrusive thoughts and asking for help — is exactly what the Circle is for. These rules are not intended to stop you saying how you actually feel.
 
-In Circle, your posts and replies show your **Circle nickname** — a nickname you choose, which cannot be your display name. Your display name is shown only on a post or reply where you choose to use it. Your profile photo is never shown in Circle. Each post and reply keeps the name it was published under, even if you later change your nickname or display name, and content published before this version keeps the label it already had.
+In Circle, your posts and replies show your **display name** by default. For any post or reply you can choose **"Use Circle nickname"**, and it shows your **Circle nickname** instead — a nickname you choose, which cannot be your display name. The choice applies to that post or reply only. Your profile photo is never shown in Circle. Each post and reply keeps the name it was published under, even if you later change your nickname or display name, and content published before this version keeps the label it already had.
 
-**A nickname only changes what other members see.** Every post and reply — under a nickname or anonymous — remains linked internally to your account, and our moderators and administrators can identify you as the author. We keep this link so we can respond to safety reports and enforce these Terms. Post accordingly.
+**A nickname only changes what other members see.** Posting under a nickname is pseudonymous to other members, not anonymous to Hera. Every post and reply — under a nickname, your name, or anonymous — remains linked internally to your account, and our moderators and administrators can identify you as the author. We keep this link so we can respond to safety reports and enforce these Terms. Post accordingly.
 
-**Reporting and blocking.** You can report any post or comment from the post menu, and you can block another member. Blocking hides that member's posts and comments from you and hides yours from them, and it prevents a mentorship connection between you. Reports go to the Hera team; they are not shown to the member you reported, and other members cannot see them.
+**Reporting and blocking.** To report a post, a comment, a message or a member, email the Hera team at **heraformothers@gmail.com** — the Report option in a post's menu or a conversation's menu shows the address. Hera has no in-app report form and sends nothing on your behalf. You can block another member in the app. Blocking hides that member's posts and comments from you and hides yours from them, and it prevents a mentorship connection between you. Reports go to the Hera team; they are not shown to the member you reported, and other members cannot see them.
 
 ---
 
@@ -86,7 +86,7 @@ In Circle, your posts and replies show your **Circle nickname** — a nickname y
 
 You keep ownership of what you write in Hera.
 
-For Circle posts, you are responsible for what you post, and you confirm you have the right to post it. Circle posts are displayed to signed-in Hera members under your Circle nickname, or under your display name where you choose it.
+For Circle posts, you are responsible for what you post, and you confirm you have the right to post it. Circle posts are displayed to signed-in Hera members under your display name, or under your Circle nickname where you choose it.
 
 So that Hera can work at all, you give us a limited permission to host, store, copy, transmit, display, moderate, hide and remove the content you put into Hera, for the sole purpose of operating, moderating and securing the service. This permission is non-exclusive, worldwide and royalty-free, it is not transferable to anyone else, and it ends when you delete your content or your account — except for copies retained in our routine backups until they expire, copies retained as part of a safety record under section 7, and anything other members have already seen, copied or screenshotted, which we cannot recall.
 
@@ -120,7 +120,7 @@ Mentors agree to a separate **Mentor Confidentiality, Boundaries and Conduct Agr
 
 **Messages between a matched mentor and mentee — including photos, files and voice notes — are visible in the app only to the two of you.**
 
-**They are not end-to-end encrypted**, and we do not continuously monitor them. We can access message content if you report a conversation to us. The other person can screenshot, copy, or repeat anything you send.
+**They are not end-to-end encrypted**, and we do not continuously monitor them. We can access message content if you report a conversation to us by email. The other person can screenshot, copy, or repeat anything you send.
 
 You can edit or delete a message you sent for 15 minutes after sending it. The other person will see that it was edited or deleted, and we keep the original text in a restricted archive so that a report can still be looked into (see the Privacy Notice). Deleting your account deletes your conversations from our servers — both people's messages and files — for both of you.
 

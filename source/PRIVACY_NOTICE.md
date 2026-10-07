@@ -17,12 +17,14 @@ This notice covers the Hera iOS app and the account behind it. It does not cover
 | Email address and password | You, at sign-up | To create and secure your account. Your password is handled entirely by our authentication provider; Hera's own code never sees or stores it. |
 | Your confirmation that you are 18 or older | You, at sign-up | To record that you confirmed you are eligible to use Hera |
 | A profile photo, if you add one | You, in Profile | To show you to the members you connect with — on a mentorship request, in Messages and, for a peer mentor, on her listing. It is never shown in Circle. It is stored on our servers and is not public on the internet; any signed-in member's app can be shown it through a link that expires. You can remove it at any time |
-| Display name, and a Circle nickname | You, at sign-up or in Profile | Your display name is used in peer support. In Circle, other members see your Circle nickname; your display name is shown on a Circle post or reply only if you choose "Post with my name" for it. Your nickname cannot be your display name, and you must choose one before posting in Circle under it. You can change either at any time; content you have already published keeps the name it was published under |
+| Display name, and a Circle nickname | You, at sign-up or in Profile | Your display name is used in peer support and, by default, on your Circle posts and replies. For any post or reply you can choose "Use Circle nickname", and other members then see your nickname instead. Your nickname cannot be your display name, and you must set one before posting under it. You can change either at any time; content you have already published keeps the name it was published under |
 | Motherhood stage (which may include "Pregnant"), baby age (free text), support needs, feelings you selected, and whether you want to act as a mentor or mentee | You, during onboarding or in Profile | To personalise the app and to score mentor recommendations |
 | Mood check-ins — a mood value, label, emoji and optional tags | You, in the Care tab | To show you your own mood history |
 | Journal entries — free text you write, including anything you save from the gentle exercises | You, in the Care tab | To give you a private place to write |
-| Circle posts, comments, reactions, saved posts, and topic suggestions or votes — and, for each post and comment, the name it was published under (your nickname, or your display name if you chose it) | You, in the Circle tab | To run the peer community, and to keep showing each post and comment under the name it was published under, even if you later change your nickname or display name |
-| Reports you file and members you block, including the name a member was shown under when you blocked them | You | Safety and moderation. The name is kept so your blocked list shows the person as you saw them, and nothing more |
+| Circle posts, comments, reactions, saved posts, and topic suggestions or votes — and, for each post and comment, the name it was published under (your display name, or your nickname if you chose it) | You, in the Circle tab | To run the peer community, and to keep showing each post and comment under the name it was published under, even if you later change your nickname or display name |
+| Members you block, including the name a member was shown under when you blocked them | You | Safety. The name is kept so your blocked list shows the person as you saw them, and nothing more |
+| Reports, feedback and support or privacy requests you email us | You, by email to heraformothers@gmail.com | To look into what you tell us and reply to you. These arrive in the Hera team's Google-hosted inbox (section 6), not in the app |
+| Reports filed in the app by earlier versions of Hera | You, before this version | Safety and moderation. Kept under section 10 |
 | Mentor application — the name you ask us to use, what you tell us about your experience, and your application status | You, if you apply to mentor | To assess and list mentors. We follow up using your account email; we do not ask for a second contact detail |
 | A separate mentor application form, if you open one | You, if you apply through the form linked in the Mentor tab | That form is hosted by **Google**, not by Hera — see section 6 |
 | Mentor matching preferences — what you would like support with, and roughly how much time you would like each week | You, in the mentor survey | To score mentor recommendations |
@@ -69,11 +71,11 @@ Some of what you put into Hera is health-related or close to it: your mood check
 
 ## 4. Your name in Circle
 
-In Circle, other members see your **Circle nickname** — a nickname you choose, which cannot be your display name. Your display name is shown on a post or reply only if you choose **"Post with my name"** (or "Use my name" on a reply) for that post or reply; it is never shown just because of another setting. The composer tells you which name will be shown before you post. Your profile photo is never shown in Circle.
+In Circle, your posts and replies show your **display name** by default. For any single post or reply you can choose **"Use my Circle nickname"** ("Use Circle nickname" on a reply), and other members then see your **Circle nickname** instead — a nickname you choose, which cannot be your display name. The choice applies to that post or reply only and is not remembered. The composer tells you which name will be shown before you post. Your profile photo is never shown in Circle.
 
 The name a post or reply is published under is recorded when you publish it and does not change afterwards — not if you later change your nickname, and not if you change your display name. Content published before this version keeps exactly the label it already had: posts and replies shown under your Circle name continue to show it, and content you posted anonymously continues to show "Anonymous mother".
 
-Under a nickname, your display name is not sent to other members' devices at all. Every post and reply — under a nickname or anonymous — is still linked to your account internally, so that we can act on safety reports and enforce the Terms. Moderators and administrators can identify its author when they need to.
+Under a nickname, your display name is not sent to other members' devices at all, so posting under a nickname is pseudonymous to other members. It is not anonymous to Hera: every post and reply — under a nickname, your name, or anonymous — is still linked to your account internally, so that we can act on safety reports and enforce the Terms. Moderators and administrators can identify its author when they need to.
 
 ---
 
@@ -84,10 +86,10 @@ Under a nickname, your display name is not sent to other members' devices at all
 - To show a mentor's profile — the name she chose, what she has written about herself, what she can help with, and the languages she speaks — to mothers looking for support
 - To deliver messages, photos, files and voice notes between a matched mentor and mentee, and to show each of you when the other has read them
 - To keep a history of your in-app notifications
-- To show your posts and comments to the community under the name each was published under — your Circle nickname, or your display name where you chose it — and to show you a list of your own posts
+- To show your posts and comments to the community under the name each was published under — your display name, or your Circle nickname where you chose it — and to show you a list of your own posts
 - To keep your journal and mood check-ins private to you
 - To recommend mentor matches and to run mentorship once both sides agree
-- To review reports and moderate content, which includes identifying the author of anonymous content where that is necessary for safety
+- To look into reports and moderate content, which includes identifying the author of content posted under a nickname or anonymously where that is necessary for safety
 - To send the reminders you have turned on
 - To keep a record of the legal documents you have accepted
 - To meet legal obligations
@@ -105,11 +107,11 @@ We do not sell your information and we do not share it with third parties for th
 | Supabase | Hosts our database, authentication and file storage (profile photos, and the photos, files and voice notes sent in conversations), runs two server-side functions, and sends account emails such as confirmation and password reset | All account and app content described above, including your email address |
 | Expo | Builds and distributes app updates | The app itself. No account content |
 | Apple | Distributes the app | Standard App Store metadata |
-| Google | Hosts the optional mentor application form linked from the Mentor tab, and the Hera team's email inbox (heraformothers@gmail.com) | Only what you type into that form, if you choose to submit it, and what you write in any email you send us |
+| Google | Hosts the optional mentor application form linked from the Mentor tab, and the Hera team's email inbox (heraformothers@gmail.com), where reports, feedback and support requests arrive | Only what you type into that form, if you choose to submit it, and what you write in any email you send us, including a report |
 
-**Reports are handled inside Hera.** Reports you file go to our own database under the access rules in section 8; they are not sent to any third party.
+**Reports are made by email.** Hera has no in-app report form. Tapping Report in the app shows our email address; if you choose to write to us, your own mail app sends exactly what you write. Hera adds nothing from your account, your posts or your conversations, and sends nothing on your behalf.
 
-Anything you submit through the Google-hosted mentor application form, and any email you send us, is held in our Google account, outside the Hera database — so it is not covered by in-app account deletion. Ask us and we will delete it. When you email us from inside the app, your own mail app opens with at most a subject line filled in; Hera adds nothing from your conversations, and nothing is sent until you send it.
+Anything you submit through the Google-hosted mentor application form, and any email you send us — including reports — is held in our Google account, outside the Hera database, so it is not covered by in-app account deletion. Ask us and we will delete it, subject to section 10. When you tap our address inside the app, your own mail app opens with at most a subject line filled in; nothing is sent until you send it.
 
 We may also disclose information where we are required to by law, or where it is necessary to protect someone's safety.
 
@@ -135,7 +137,7 @@ Some of our other providers operate outside Singapore: app builds and updates ar
 
 **Who can reach your information.** It is worth being precise about this, because "private" can mean several different things:
 
-- **Other members** see only what you choose to publish, under the name or nickname you chose, and — if you are matched with them — the messages you send them. They never see your journal, your mood check-ins, your email address, your reports, or the display name behind a nickname or an anonymous post.
+- **Other members** see only what you choose to publish, under your name or the nickname you chose, and — if you are matched with them — the messages you send them. They never see your journal, your mood check-ins, your email address, your reports, or the display name behind a nickname or an anonymous post.
 - **In-app moderators** can review, hide and remove Circle content and can identify the author of anonymous content. Moderator tools give **no** access to journal entries or mood check-ins.
 - **Project administrators** are a small number of named people on the Hera team who administer the database and hosting account. Journal entries and mood check-ins are protected by account-level database access controls and are not available through ordinary moderator functions. However, a limited number of authorised project administrators with infrastructure-level access **may technically access information** through our hosting and database tools where reasonably necessary for security, maintenance, support, legal compliance or incident response. They do not routinely read private journal entries or mood check-ins, and casual access is prohibited.
 - **Our infrastructure providers** hold the data on their systems and can technically access it as part of running those systems, subject to their own terms and security commitments.
@@ -166,13 +168,13 @@ You can delete your account at any time from your Profile. It is permanent and c
 
 ## 10. Reports and safety records
 
-When you report a post, a comment, a message or a member, we keep a record of the report: what was reported, who reported it, the reason you gave, and what we did about it. We need it to act on the report, to notice repeated behaviour, and to be able to explain a decision later.
+You report a post, a comment, a message or a member by emailing us at heraformothers@gmail.com. We keep your email and a record of what we did about it. We need them to act on the report, to notice repeated behaviour, and to be able to explain a decision later.
 
-Reports are visible to you and to Hera's moderators. They are never shown to the member you reported and never to other members.
+Reports are read only by the Hera team. They are never shown to the member you reported and never to other members. Earlier versions of Hera let you file reports inside the app; those are kept under the same rules.
 
 We keep a report for up to **12 months** after it is resolved, and then delete it or irreversibly de-identify it. We may keep one for longer only where a complaint is still unresolved, where there is an ongoing safety or security incident, or where we are required to keep it by law.
 
-If you delete your account, reports connected to you are kept for the remainder of that period **with your identity removed**, so that a safety record survives without pointing back at you.
+If you delete your account, reports filed in the app that are connected to you are kept for the remainder of that period **with your identity removed**, so that a safety record survives without pointing back at you. Reports you emailed us are not removed by account deletion; ask us and we will delete them, unless the report is still open or we must keep it for one of the reasons above.
 
 Records of the legal documents you accepted are kept while your account exists and are deleted with it. This means we do not retain evidence of what a departed user agreed to — we have chosen to prioritise deletion over that evidence.
 

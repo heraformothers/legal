@@ -14,7 +14,7 @@ These guidelines apply to the Circle. You accept them before your first post or 
 2. **No hate.** No abuse, harassment, slurs, or attacks on any person or group.
 3. **No medical advice.** Share your experience; do not tell other members what to do about their health, medication, or their baby's health.
 4. **No solicitation.** No selling, advertising, recruiting, or promotion.
-5. **Report problems.** Use the report function rather than confronting a member yourself.
+5. **Report problems.** Email the Hera team rather than confronting a member yourself — Report in a post's menu shows the address.
 
 ---
 
@@ -36,9 +36,9 @@ There is a difference between saying you are struggling — always welcome — a
 
 ## Your name in Circle
 
-Your posts and comments show your Circle nickname. Your name is shown only on a post or comment where you choose to use it. Each keeps the name it was posted under, and content you posted before this version keeps the label it was posted under.
+Your posts and comments show your name by default. For any post or comment you can choose "Use Circle nickname" to show your Circle nickname instead; the choice is for that post or comment only. Each keeps the name it was posted under, and content you posted before this version keeps the label it was posted under.
 
-**A nickname only changes what other members see.** Every post and comment — under a nickname or anonymous — stays linked to your account internally, and Hera's moderators can identify you as the author. We keep that link so we can act on safety reports and enforce these rules. Post accordingly.
+**A nickname only changes what other members see.** It is pseudonymous to other members, not anonymous to Hera. Every post and comment — under a nickname, your name, or anonymous — stays linked to your account internally, and Hera's moderators can identify you as the author. We keep that link so we can act on safety reports and enforce these rules. Post accordingly.
 
 ---
 
@@ -50,9 +50,9 @@ Use the trigger-warning option when your post covers something another mother ma
 
 ## Reporting and blocking
 
-**Report** any post or comment from the post menu. Reports go to the Hera team. They are never shown to the member you reported, and other members cannot see them. Reporting someone in good faith will never count against you.
+**Report** by emailing the Hera team at **heraformothers@gmail.com**. Report in a post's menu shows the address; there is no in-app report form. Reports are read only by the Hera team. They are never shown to the member you reported, and other members cannot see them. Reporting someone in good faith will never count against you.
 
-**Block** a member from the same menu. Blocking hides their posts and comments from you and yours from them, and prevents a mentorship connection between you. You can block someone whose posts are anonymous — that blocks the person, not everyone posting anonymously.
+**Block** a member from a post's menu. Blocking hides their posts and comments from you and yours from them, and prevents a mentorship connection between you. You can block someone whose posts are anonymous — that blocks the person, not everyone posting anonymously.
 
 ---
 
