@@ -2,8 +2,9 @@
 
 The public legal pages for **Hera**, an unincorporated, student-led peer-support project in Singapore.
 
-> **Status: DRAFT FOR REVIEW — NOT YET EFFECTIVE.**
-> These documents are published for review only. They are not in force, several publication details are unresolved, and nothing here is App Store ready.
+> **Status:** the pages at the published URL are the documents in force. The `source/` text may be
+> ahead of them between a revision and its publication; the version line at the top of each document
+> says which version a page is.
 
 ## Pages
 
@@ -19,7 +20,7 @@ route, which is why the repository root holds the index rather than a `legal/` f
 | `/legal/community-guidelines/` | Community Guidelines |
 | `/legal/mentor-agreement/` | Mentor Agreement |
 | `/legal/support/` | Contact details and crisis resources |
-| `/legal/peer-support/` | Peer Support & Mentorship Safety — **status page, notice not yet written** |
+| `/legal/peer-support/` | Peer Support & Mentorship Safety (written in `scripts/build.py`; its version is `PEER_SUPPORT_VERSION`) |
 
 Two compatibility routes exist so that links already stored in the app never 404:
 

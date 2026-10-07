@@ -2,9 +2,8 @@
 
 **Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
 
-These guidelines apply to the Circle. You accept them before your first post or comment. They expand on section 5 of the Terms of Use; where the two differ, the Terms apply.
+These guidelines apply to the Circle. You accept them before your first post or comment, and again before your next one whenever they change. They expand on section 5 of the Terms of Use; where the two differ, the Terms apply.
 
-**Kept as a separate document because** it is gated separately in the app (you accept it at your first post, not at sign-up), it is versioned separately, and it is the document a member is most likely to be pointed back to. Folding it into the Terms would make the moment of acceptance meaningless.
 
 ---
 

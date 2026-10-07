@@ -320,7 +320,7 @@ ambulance, <strong>999</strong> for the police.</p></div>
 and postpartum mothers in Singapore. Hera is not a medical service and not an emergency service. No
 one at Hera is monitoring the app for people in danger.</p>
 <h2 id="contact-us">Contact us</h2>
-<p>For help with the app, a privacy request, or a complaint, email
+<p>To report something, or for help with the app, a privacy request, or a complaint, email
 <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>. We aim to reply within 14 days.</p>
 <div class="tablewrap"><table>
 <thead><tr><th scope="col">What you need</th><th scope="col">Who to contact</th></tr></thead>
@@ -402,8 +402,8 @@ directly &mdash; in Singapore, <strong>995</strong> for an ambulance or <strong>
 police. Further numbers are listed on our <a href="../support/">Support page</a>.</p></div>
 
 <h2 id="what-you-choose-to-share">What you choose to share</h2>
-<p>When you send a request, a mentor sees your display name, your profile photo if you have one, your
-motherhood stage, the age of your youngest child, the support you are looking for, the time you hope
+<p>When you send a request, a mentor sees your display name, your profile photo if you have one, what
+you have written about yourself, your motherhood stage, the age of your youngest child, the support you are looking for, the time you hope
 to have each week, and what you write to her. Share only what you are
 comfortable sharing, and take the time you want before sharing more. You are never obliged to
 disclose a diagnosis, your address, your workplace, or anything else about your family.</p>
