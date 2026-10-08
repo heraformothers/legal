@@ -2,7 +2,7 @@
 
 **Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
 
-These Terms are an agreement between you and the operator of Hera. By creating an account or using Hera, you agree to them and to the Privacy Notice. If you do not agree, do not use Hera.
+These Terms are an agreement between you and the members of the Hera team who operate Hera. Hera is not a company or other registered legal entity; "Hera", "we" and "the Hera team" in these Terms mean those members acting together. By creating an account or using Hera, you agree to them and to the Privacy Notice. If you do not agree, do not use Hera.
 
 Hera is operated as an unincorporated, student-led project with no registered legal entity. It is run by the **Hera Project Team** — the Hera team — which is responsible for it. Hera is distributed through an individual Apple Developer account held by a member of the Hera team. Hera is not operated, sponsored, endorsed or supervised by any university, hospital, clinic or other organisation.
 
@@ -187,4 +187,4 @@ If any part of these Terms turns out to be unenforceable, the rest of them conti
 Questions, requests, or complaints: **heraformothers@gmail.com**. We aim to reply within 14 days.
 
 - Moderation and safety concerns: **Hera Moderation & Safety Lead**, at the same address.
-- Privacy and data protection: **Hera Data Protection Lead**, at the same address. See the Privacy Notice for what you can ask for.
+- Privacy and data protection: **the Hera team**, at the same address. See the Privacy Notice for what you can ask for.
