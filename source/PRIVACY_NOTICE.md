@@ -1,6 +1,6 @@
 # Hera — Privacy Notice
 
-**Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
+**Version 2026-10-07.1 · Effective 9 October 2026**
 
 Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team** — the Hera team — which is responsible for Hera and for the decisions described in this notice.
 

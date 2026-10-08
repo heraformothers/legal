@@ -1,6 +1,6 @@
 # Hera — Community Guidelines
 
-**Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
+**Version 2026-10-07.1 · Effective 9 October 2026**
 
 These guidelines apply to the Circle. You accept them before your first post or comment, and again before your next one whenever they change. They expand on section 5 of the Terms of Use; where the two differ, the Terms apply.
 

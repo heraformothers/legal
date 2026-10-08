@@ -1,6 +1,6 @@
 # Hera — Mentor Confidentiality, Boundaries and Conduct Agreement
 
-**Version 2026-10-07.1 · Effective [PUBLICATION DATE]**
+**Version 2026-10-07.1 · Effective 9 October 2026**
 
 This agreement is for Hera mentors. You accept it before your mentor application can be submitted, and it applies for as long as you are listed as a mentor. It sits alongside the Terms of Use, the Privacy Notice and the Community Guidelines, which also apply to you as a member.
 

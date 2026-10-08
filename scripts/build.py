@@ -39,7 +39,7 @@ DOCUMENT_SET_VERSION = "2026-08-05.1"
 # The peer-support notice is written here rather than in source/, so its
 # version lives here too. Bump both, and legal_documents.peer_support_notice.
 PEER_SUPPORT_VERSION = "2026-10-07.1"
-PEER_SUPPORT_EFFECTIVE = "[PUBLICATION DATE]"
+PEER_SUPPORT_EFFECTIVE = "9 October 2026"
 
 
 # --------------------------------------------------------------- inline pass
