@@ -170,7 +170,7 @@ You can delete your account at any time from your Profile. Deletion is permanent
 
 ## 13. Changes to these Terms
 
-We version these Terms. If we make a material change, we will publish the new version at the same address and tell you about it in the app or by email. Where a change affects the Circle or mentorship, the app will ask you to accept the updated Community Guidelines or Peer Support notice before you next post or send a message there. If you do not accept a new version, you can delete your account.
+We version these Terms. If we make a material change, we will publish the new version at the same address and ask you in the app to read and accept it. A new version of the Community Guidelines, the Peer Support notice or the Mentor Agreement is asked for before you next use the feature it covers. We record which version you accepted and when. If you do not accept a new version, you can delete your account.
 
 ---
 
