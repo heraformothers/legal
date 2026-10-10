@@ -1,6 +1,6 @@
 # Hera — Privacy Notice
 
-**Version 2026-10-07.1 · Effective 9 October 2026**
+**Version 2026-10-09.1 · Effective [PUBLICATION DATE]**
 
 Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team** — the Hera team — which is responsible for Hera and for the decisions described in this notice.
 
@@ -101,7 +101,7 @@ We do **not** use your information for advertising, for profiling unrelated to m
 
 ## 6. Who else handles your information
 
-We do not sell your information and we do not share it with third parties for the ordinary operation of the app. We rely on the following service providers:
+We do not sell your information, and we do not share it for advertising or tracking. We disclose it to the following service providers only as needed to operate Hera:
 
 | Provider | What they do | What reaches them |
 |---|---|---|
@@ -129,12 +129,12 @@ Some of our other providers operate outside Singapore: app builds and updates ar
 ## 8. How we protect your information
 
 - Traffic between the app and our servers is encrypted in transit.
-- Our database enforces, row by row, that your private content is readable only by your own account.
+- Through the app, our database's access rules decide, row by row, who can read what: your journal entries and mood check-ins only you; a mentorship conversation only its two participants; Circle posts and replies signed-in members. These rules do not limit authorised administrators working directly on our hosting infrastructure (see below).
 - Administrative privileges cannot be granted by the app itself; they can only be set by an administrator directly in the database.
 - You can lock your journal behind Face ID on your device. This protects the journal screen in the app; it does not separately encrypt what is stored, and it is skipped if your phone has no biometric set up.
 - Passwords are handled by our authentication provider; Hera's own code never receives them.
 - Data is encrypted at rest by our hosting provider.
-- **Messages, photos, files and voice notes between mentors and mentees are not end-to-end encrypted.** They are protected in transit and at rest, but they are readable by our infrastructure in principle, and we can access them if you report a conversation.
+- **Messages, photos, files and voice notes between mentors and mentees are not end-to-end encrypted.** They are encrypted in transit and at rest. Through the app only the two participants can read them; authorised administrators can technically access them through our hosting infrastructure, only in the circumstances described below, including when you report a conversation.
 
 **Who can reach your information.** It is worth being precise about this, because "private" can mean several different things:
 
@@ -157,7 +157,7 @@ You can delete your account at any time from your Profile. It is permanent and c
 
 **Conversations are deleted whole.** A conversation belongs to both people in it, so deleting your account deletes every mentorship conversation you are part of — your messages and the other person's, the photos, files and voice notes either of you sent, and the archived text of edited or deleted messages — for both of you. The same happens to your conversation if the other person deletes her account. Hera's own data on your phone — the local copies of your profile, journal, preferences and blocked members — is cleared at the same time.
 
-**What takes a little longer.** Our database provider keeps short-term internal copies of the database so the service can be restored after a failure. We cannot browse, search, or restore individual records from those copies, and we never use them to look anything up. Deleted information disappears from them as they age out on the provider's normal cycle.
+**What takes a little longer.** Our database provider may keep backup copies of the database for a limited period so the service can be restored after a failure. We do not use backups to look up or restore any one member's information. Deleted information remains in a backup until that backup expires on the provider's cycle.
 
 **What is kept.** Reports and safety records connected to you are retained as described in section 10.
 
@@ -183,7 +183,7 @@ Records of the legal documents you accepted are kept while your account exists a
 
 ## 11. Your choices and your rights
 
-- **Access.** You can ask us for a copy of the personal data we hold about you. Email the address in section 13. There is no self-service export in this version, so we will put it together by hand.
+- **Access.** You can ask us for a copy of the personal data we hold about you, and for information about how it has been used or disclosed in the past year. Email the address in section 13. There is no self-service export in this version, so we will put it together by hand.
 - **Correction.** You can edit your name, Circle nickname and profile photo in Profile, and your support preferences in the mentor survey, at any time. You can ask us to correct anything you cannot edit yourself.
 - **Withdrawing consent.** You can withdraw your consent to Hera's collection and use of your information at any time by deleting your account. Because Hera cannot provide an account, a community or mentorship without it, withdrawing means your account and its data are deleted — we will make that clear before you confirm.
 - **Notifications.** Reminders and phone notifications are optional and separate from accepting these documents. You can turn them off in Settings or in iOS at any time, and declining them does not restrict any other part of Hera.

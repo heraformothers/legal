@@ -1,6 +1,6 @@
 # Hera — Terms of Use
 
-**Version 2026-10-07.1 · Effective 9 October 2026**
+**Version 2026-10-09.1 · Effective [PUBLICATION DATE]**
 
 These Terms are an agreement between you and the members of the Hera team who operate Hera. Hera is not a company or other registered legal entity; "Hera", "we" and "the Hera team" in these Terms mean those members acting together. By creating an account or using Hera, you agree to them and to the Privacy Notice. If you do not agree, do not use Hera.
 
@@ -118,9 +118,9 @@ Mentors agree to a separate **Mentor Confidentiality, Boundaries and Conduct Agr
 
 **One mentor at a time.** You have one mentor at a time. A mentor chooses how many mothers she can support at once, up to ten; once she has reached that number she does not appear to anyone else looking for support until a place frees up. When a mentorship ends, you are free to request a mentor again, or either of you can ask to reconnect; reconnecting resumes the same conversation.
 
-**Messages between a matched mentor and mentee — including photos, files and voice notes — are visible in the app only to the two of you.**
+**In the app, messages between a matched mentor and mentee — including photos, files and voice notes — can be read only by the two of you.**
 
-**They are not end-to-end encrypted**, and we do not continuously monitor them. We can access message content if you report a conversation to us by email. The other person can screenshot, copy, or repeat anything you send.
+They are encrypted in transit and at rest, but they are **not end-to-end encrypted**. We do not routinely monitor or read them. A small number of authorised administrators can technically access stored messages through our hosting infrastructure, and do so only where reasonably necessary — to look into a conversation you report to us, or for security, maintenance, legal compliance or incident response. The other person can screenshot, copy, or repeat anything you send.
 
 You can edit or delete a message you sent for 15 minutes after sending it. The other person will see that it was edited or deleted, and we keep the original text in a restricted archive so that a report can still be looked into (see the Privacy Notice). Deleting your account deletes your conversations from our servers — both people's messages and files — for both of you.
 
