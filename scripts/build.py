@@ -328,7 +328,7 @@ one at Hera is monitoring the app for people in danger.</p>
 <tr><td data-label="What you need">General support or an account problem</td>
     <td data-label="Who to contact"><a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></td></tr>
 <tr><td data-label="What you need">Privacy, access or correction request</td>
-    <td data-label="Who to contact">The Hera team,
+    <td data-label="Who to contact">Hera Data Protection Lead,
     at <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></td></tr>
 <tr><td data-label="What you need">Moderation or safety concern</td>
     <td data-label="Who to contact">Hera Moderation &amp; Safety Lead,

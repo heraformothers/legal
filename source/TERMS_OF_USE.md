@@ -187,4 +187,4 @@ If any part of these Terms turns out to be unenforceable, the rest of them conti
 Questions, requests, or complaints: **heraformothers@gmail.com**. We aim to reply within 14 days.
 
 - Moderation and safety concerns: **Hera Moderation & Safety Lead**, at the same address.
-- Privacy and data protection: **the Hera team**, at the same address. See the Privacy Notice for what you can ask for.
+- Privacy and data protection: **Hera Data Protection Lead** — heraformothers@gmail.com. See the Privacy Notice for what you can ask for.

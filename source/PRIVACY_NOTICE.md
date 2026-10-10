@@ -4,7 +4,7 @@
 
 Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team** — the Hera team — which is responsible for Hera and for the decisions described in this notice.
 
-For questions about privacy, your personal data, or access and correction requests, contact the Hera team at **heraformothers@gmail.com** — see section 11.
+For questions about privacy, your personal data, or access and correction requests, contact the **Hera Data Protection Lead** — a member of the Hera team designated to be responsible for Hera's compliance with Singapore's Personal Data Protection Act — at **heraformothers@gmail.com**. See section 11.
 
 This notice covers the Hera iOS app and the account behind it. It does not cover the independent organisations whose helpline numbers we list.
 
@@ -207,6 +207,6 @@ We version this notice. If we make a material change, we will publish the new ve
 
 Questions, requests, or complaints: **heraformothers@gmail.com**. We aim to reply within 14 days.
 
-- Privacy and data protection: **the Hera team**, at the same address
+- Privacy and data protection: **Hera Data Protection Lead** — heraformothers@gmail.com
 - Moderation and safety: **Hera Moderation & Safety Lead**
 - Responsible for Hera: **the Hera team**
