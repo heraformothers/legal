@@ -1,6 +1,6 @@
 # Hera — Privacy Notice
 
-**Version 2026-10-09.1 · Effective [PUBLICATION DATE]**
+**Version 2026-10-09.1 · Effective 10 October 2026**
 
 Hera is an unincorporated, student-led project based in Singapore that provides non-clinical peer support for mothers. Hera is not a registered company, a clinic, or a healthcare provider. "We" means the **Hera Project Team** — the Hera team — which is responsible for Hera and for the decisions described in this notice.
 
@@ -106,7 +106,7 @@ We do not sell your information, and we do not share it for advertising or track
 | Provider | What they do | What reaches them |
 |---|---|---|
 | Supabase | Hosts our database, authentication and file storage (profile photos, and the photos, files and voice notes sent in conversations), and runs our server-side functions | All account and app content described above, including your email address and your push-notification token |
-| Expo | Builds and distributes app updates, and relays notifications to Apple | The app itself; and, for each notification, your push-notification token and its wording (who did what — never what anyone wrote). No other account content |
+| Expo | Builds the app, and relays notifications to Apple | The app itself; and, for each notification, your push-notification token and its wording (who did what — never what anyone wrote). No other account content |
 | Apple | Distributes the app, and delivers notifications to your phone | Standard App Store metadata; and, for each notification, your push-notification token and its wording (who did what — never what anyone wrote) |
 | Google | Hosts the optional mentor application form linked from the Mentor tab, and the Hera team's email inbox (heraformothers@gmail.com), where reports, feedback and support requests arrive. It also sends our account emails, such as password reset, from that address | Only what you type into that form, if you choose to submit it; what you write in any email you send us, including a report; and your email address and the link in any account email we send you |
 
@@ -122,7 +122,13 @@ We may also disclose information where we are required to by law, or where it is
 
 Our database and authentication are hosted in **Singapore (ap-southeast-1)**.
 
-Some of our other providers operate outside Singapore: app builds and updates are distributed through Expo's infrastructure, which is primarily in the United States; Apple's App Store infrastructure is global; and Google, which hosts our email inbox (where reports, feedback and support requests arrive) and the mentor application form, stores data on its own global infrastructure. Where personal data is handled outside Singapore, we rely on those providers' contractual and security commitments to protect it to a standard comparable to the protection it has here.
+Some service providers we use may process personal data outside Singapore:
+
+- **Expo**, which we use to build Hera and relay notifications to Apple. For notifications, Expo receives the device push token and notification wording.
+- **Apple**, which distributes Hera through the App Store and delivers notifications. Apple operates global infrastructure.
+- **Google**, which hosts the Hera email inbox, sends account emails such as password resets, and hosts the optional mentor application form. Google operates global infrastructure.
+
+We use these services only for the purposes described in this notice. Personal data processed outside Singapore may be subject to the laws and protections of other countries. The contractual and legal safeguards applicable to these overseas transfers are kept under review.
 
 ---
 

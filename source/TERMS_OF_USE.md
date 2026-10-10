@@ -1,6 +1,6 @@
 # Hera — Terms of Use
 
-**Version 2026-10-09.1 · Effective [PUBLICATION DATE]**
+**Version 2026-10-09.1 · Effective 10 October 2026**
 
 These Terms are an agreement between you and the members of the Hera team who operate Hera. Hera is not a company or other registered legal entity; "Hera", "we" and "the Hera team" in these Terms mean those members acting together. By creating an account or using Hera, you agree to them and to the Privacy Notice. If you do not agree, do not use Hera.
 
